@@ -1,0 +1,40 @@
+@import "./variables";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  nav {
+    .inner {
+      height: 10rem;
+      background: red;
+      color: white;
+    }
+  }
+  h1 {
+    color: $primary;
+  }
+
+  .content {
+    display: grid;
+    place-items: center;
+  }
+}
