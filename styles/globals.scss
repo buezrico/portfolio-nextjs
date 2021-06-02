@@ -88,6 +88,7 @@ header {
         cursor: pointer;
         padding: 0.1rem;
       }
+
       ul {
         li {
           a {
@@ -153,6 +154,7 @@ header {
         }
         .btn {
           font-size: 1.5rem;
+          color: $light;
         }
 
         @media screen and (min-width: 992px) {
