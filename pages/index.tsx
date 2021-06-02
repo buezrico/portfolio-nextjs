@@ -22,10 +22,20 @@ export default function Home() {
       </Head>
 
       <header>
-        <div className="top-info">
-          <div className="phone d-flex bg-danger">
+        <div className="top-info ">
+          <div className="phone contact-info">
             <i className="bx bx-phone-call bx-tada-hover"></i>
             <p>+234 810 916 9579</p>
+          </div>
+          <div className="email contact-info ">
+            <i className="bx bx-mail-send bx-tada-hover"></i>
+            <p>ricobuez@gmail.com</p>
+          </div>
+          <div className="social">
+            <i className="bx bxl-github bx-tada-hover"></i>
+            <i className="bx bxl-instagram bx-tada-hover"></i>
+            <i className="bx bxl-twitter bx-tada-hover"></i>
+            <i className="bx bxl-whatsapp bx-tada-hover"></i>
           </div>
         </div>
         <Navbar />

@@ -1,5 +1,4 @@
 @import "./variables";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 html,
 body {
@@ -23,11 +22,41 @@ p {
 }
 
 header {
+  .top-info {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      margin-bottom: 0.3rem;
+
+      i {
+        margin-right: 0.5rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .social {
+      i {
+        color: $light;
+        margin-right: 0.5rem;
+        background: $primary;
+        padding: 0.2rem;
+        border-radius: 50%;
+      }
+    }
+  }
   nav {
+    background: $primary;
+    height: 3rem;
     .inner {
-      height: 10rem;
       // background: red;
-      color: green;
     }
   }
   h1 {
