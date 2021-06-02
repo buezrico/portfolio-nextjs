@@ -22,32 +22,37 @@ export default function Home() {
       </Head>
 
       <header>
-        <div className="top-info ">
-          <div className="phone contact-info">
-            <i className="bx bx-phone-call bx-tada-hover"></i>
-            <p>+234 810 916 9579</p>
+        <div className="top">
+          <div className="top-info ">
+            <div className="phone contact-info">
+              <i className="bx bx-phone-call bx-tada-hover"></i>
+              <p>+234 810 916 9579</p>
+            </div>
+            <div className="email contact-info ">
+              <i className="bx bx-mail-send bx-tada-hover"></i>
+              <p>ricobuez@gmail.com</p>
+            </div>
+            <div className="social">
+              <i className="bx bxl-github bx-tada-hover"></i>
+              <i className="bx bxl-instagram bx-tada-hover"></i>
+              <i className="bx bxl-twitter bx-tada-hover"></i>
+              <i className="bx bxl-whatsapp bx-tada-hover"></i>
+            </div>
           </div>
-          <div className="email contact-info ">
-            <i className="bx bx-mail-send bx-tada-hover"></i>
-            <p>ricobuez@gmail.com</p>
-          </div>
-          <div className="social">
-            <i className="bx bxl-github bx-tada-hover"></i>
-            <i className="bx bxl-instagram bx-tada-hover"></i>
-            <i className="bx bxl-twitter bx-tada-hover"></i>
-            <i className="bx bxl-whatsapp bx-tada-hover"></i>
-          </div>
+          <Navbar />
         </div>
-        <Navbar />
 
         <div className="content">
-          <Image
-            src="/images/profile-pic.png"
-            height={400}
-            width={400}
-            className="img-fluid"
-            // layout="responsive"
-          />
+          <div className="center-content">
+            <Image
+              src="/images/profile-pic.png"
+              height={350}
+              width={400}
+              className="img-fluid"
+              // layout="responsive"
+            />
+          </div>
+          <div className="bottom-content"></div>
         </div>
       </header>
     </div>
