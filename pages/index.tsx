@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Buez Rico</title>
         <meta name="description" content="My Portfolio Website" />
@@ -44,13 +44,13 @@ export default function Home() {
 
         <div className="content">
           <div className="center-content">
-            <Image
+            {/* <Image
               src="/images/profile-pic.png"
               height={350}
               width={400}
               className="img-fluid"
               // layout="responsive"
-            />
+            /> */}
           </div>
           <div className="bottom-content"></div>
         </div>

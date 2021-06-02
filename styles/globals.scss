@@ -27,6 +27,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  // &::after {
+  //   content: "Buez";
+  //   position: fixed;
+  //   top: 50%;
+  //   left: 50%;
+  //   z-index: -1;
+  //   font-size: 5rem;
+  // }
   // background: red;
   .top-info {
     display: flex;
@@ -97,6 +106,8 @@ header {
 
   .content {
     height: 80%;
+    background: url("../public/images/profile-pic.png") no-repeat center bottom;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -107,7 +118,7 @@ header {
     .bottom-content {
       // flex: 1;
       height: 30%;
-      background: $primary;
+      // background: $primary;
       @media screen and (max-width: 768px) {
         height: 50%;
       }
