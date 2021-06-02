@@ -7,11 +7,11 @@ const Navbar = () => {
         <a className="navbar-brand text-secondary d-flex align-items-center">
           <Image
             src="/images/logo.ico"
-            height={20}
-            width={20}
+            height={40}
+            width={40}
             className="img-fluid bx-tada-hover"
           />
-          Buez
+          {/* Buez */}
         </a>
 
         <i className="bx bx-menu bx-tada-hover bx-sm d-md-none"></i>

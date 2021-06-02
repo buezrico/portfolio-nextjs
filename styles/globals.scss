@@ -81,6 +81,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       i {
         background: $secondary;
         color: $primary;
@@ -106,21 +107,68 @@ header {
 
   .content {
     height: 80%;
-    background: url("../public/images/profile-pic.png") no-repeat center bottom;
+    background: url("../public/images/profile-pic.png") no-repeat right bottom;
     background-size: contain;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    .center-content {
-      display: grid;
-      place-items: center;
-    }
-    .bottom-content {
-      // flex: 1;
-      height: 30%;
-      // background: $primary;
+    justify-content: center;
+    .top-content {
+      display: flex;
+      align-items: center;
       @media screen and (max-width: 768px) {
-        height: 50%;
+        display: block;
+        .styled-title {
+          margin-bottom: 3rem;
+        }
+      }
+
+      // width: 50%;
+      .styled-title {
+        left: 0;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-family: "Bodoni", sans-serif;
+        font-size: 1rem;
+        border-right: 2px solid $secondary;
+        border-left: 2px solid $secondary;
+        margin-right: 3rem;
+
+        background: -webkit-linear-gradient(
+          $primary,
+          $secondary,
+          $primary,
+          $secondary,
+          $primary
+        );
+        background-clip: unset;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text {
+        h1 {
+          font-weight: bold;
+          span {
+            font-size: 3rem;
+          }
+        }
+        .btn {
+          font-size: 1.5rem;
+        }
+
+        @media screen and (min-width: 992px) {
+          h1 {
+            font-size: 3rem;
+            span {
+              font-size: 4rem;
+            }
+          }
+          h4 {
+            font-size: 1.5rem;
+          }
+          .btn {
+            font-size: 2rem;
+          }
+        }
       }
     }
   }

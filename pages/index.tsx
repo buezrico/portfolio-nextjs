@@ -42,17 +42,24 @@ export default function Home() {
           <Navbar />
         </div>
 
-        <div className="content">
-          <div className="center-content">
-            {/* <Image
-              src="/images/profile-pic.png"
-              height={350}
-              width={400}
-              className="img-fluid"
-              // layout="responsive"
-            /> */}
+        <div className="content container">
+          <div className="">
+            <div className="top-content">
+              <h1 className="styled-title bx-spin">BUEZ</h1>
+
+              <div className="text">
+                <h1 className="mb-3">Hello!</h1>
+                <h1 className="mb-2">
+                  I am <span className="text-secondary">Chibueze</span>.
+                </h1>
+                <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
+                <button className="btn btn-secondary rounded px-4 p-2">
+                  Get In Touch
+                </button>
+              </div>
+            </div>
+            <div className="bottom-content"></div>
           </div>
-          <div className="bottom-content"></div>
         </div>
       </header>
     </div>
