@@ -45,15 +45,16 @@ export default function Home() {
         <div className="content container">
           <div className="">
             <div className="top-content">
-              <h1 className="styled-title bx-spin">BUEZ</h1>
+              {/* <h1 className="styled-title bx-spin">BUEZ</h1> */}
 
               <div className="text">
                 <h1 className="mb-3">Hello!</h1>
                 <h1 className="mb-2">
-                  I am <span className="text-secondary">Chibueze</span>.
+                  I am{" "}
+                  <span className="text-secondary styled-title">Chibueze</span>.
                 </h1>
                 <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
-                <button className="btn btn-secondary rounded px-4 p-2">
+                <button className="btn btn-secondary rounded px-4 p-2 ">
                   Get In Touch
                 </button>
               </div>

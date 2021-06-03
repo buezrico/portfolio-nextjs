@@ -74,7 +74,7 @@ header {
     color: $light;
     position: sticky;
     top: 0;
-    padding: 0.5rem;
+    // padding: 0.5rem;
     z-index: 10;
     // box-shadow: ;
     .inner {
@@ -84,7 +84,7 @@ header {
 
       i {
         background: $secondary;
-        color: $primary;
+        color: $light;
         cursor: pointer;
         padding: 0.1rem;
       }
@@ -92,10 +92,10 @@ header {
       ul {
         li {
           a {
-            color: $secondary;
+            color: $light;
             cursor: pointer;
             &:hover {
-              color: $light;
+              color: $secondary;
             }
           }
         }
@@ -113,6 +113,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .top-content {
       display: flex;
       align-items: center;
@@ -125,14 +126,14 @@ header {
 
       // width: 50%;
       .styled-title {
-        left: 0;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
+        // left: 0;
+        // writing-mode: vertical-rl;
+        // text-orientation: upright;
         font-family: "Bodoni", sans-serif;
-        font-size: 1rem;
-        border-right: 2px solid $secondary;
-        border-left: 2px solid $secondary;
-        margin-right: 3rem;
+        // font-size: 1rem;
+        // border-right: 2px solid $secondary;
+        // border-left: 2px solid $secondary;
+        // margin-right: 3rem;
 
         background: -webkit-linear-gradient(
           $primary,
