@@ -47,9 +47,12 @@ export default function Home() {
               I am <span className="styled-title">Chibueze</span>.
             </h1>
             <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
-            <button className="btn btn-secondary text rounded-0 px-4 p-2 ">
-              Get In Touch
-            </button>
+            <div className="btn-contact">
+              <button className="btn btn-secondary rounded p-2 px-4">
+                <i className="bx bx-mail-send"></i>
+                <p>Get In Touch</p>
+              </button>
+            </div>
             <div className="arrow-down bx-fade-down text-primary">
               <i className="bx bxs-chevrons-down"></i>
               <span>About Me</span>
