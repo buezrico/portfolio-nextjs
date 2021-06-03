@@ -22,47 +22,50 @@ export default function Home() {
       </Head>
 
       <header>
-        <div className="top">
-          <div className="top-info ">
-            <div className="phone contact-info">
-              <i className="bx bx-phone-call bx-tada-hover"></i>
-              <p>+234 810 916 9579</p>
-            </div>
-            <div className="email contact-info ">
-              <i className="bx bx-mail-send bx-tada-hover"></i>
-              <p>ricobuez@gmail.com</p>
-            </div>
-            <div className="social">
-              <i className="bx bxl-github bx-tada-hover"></i>
-              <i className="bx bxl-instagram bx-tada-hover"></i>
-              <i className="bx bxl-twitter bx-tada-hover"></i>
-              <i className="bx bxl-whatsapp bx-tada-hover"></i>
-            </div>
+        <div className="top-info ">
+          <div className="phone contact-info">
+            <i className="bx bx-phone-call bx-tada-hover"></i>
+            <p>+234 810 916 9579</p>
           </div>
-          <Navbar />
+          <div className="email contact-info ">
+            <i className="bx bx-mail-send bx-tada-hover"></i>
+            <p>ricobuez@gmail.com</p>
+          </div>
+          <div className="social">
+            <i className="bx bxl-github bx-tada-hover"></i>
+            <i className="bx bxl-instagram bx-tada-hover"></i>
+            <i className="bx bxl-twitter bx-tada-hover"></i>
+            <i className="bx bxl-whatsapp bx-tada-hover"></i>
+          </div>
         </div>
+        <Navbar />
 
         <div className="content container">
-          <div className="">
-            <div className="top-content">
-              {/* <h1 className="styled-title bx-spin">BUEZ</h1> */}
-
-              <div className="text">
-                <h1 className="mb-3">Hello!</h1>
-                <h1 className="mb-2">
-                  I am{" "}
-                  <span className="text-secondary styled-title">Chibueze</span>.
-                </h1>
-                <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
-                <button className="btn btn-secondary rounded px-4 p-2 ">
-                  Get In Touch
-                </button>
-              </div>
+          <div className="text">
+            <h1 className="mb-2 bx-tada text-center">👋</h1>
+            <h1 className="mb-2 ">
+              I am <span className="styled-title">Chibueze</span>.
+            </h1>
+            <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
+            <button className="btn btn-secondary text rounded-0 px-4 p-2 ">
+              Get In Touch
+            </button>
+            <div className="arrow-down bx-fade-down text-primary">
+              <i className="bx bxs-chevrons-down"></i>
+              <span>About Me</span>
             </div>
-            <div className="bottom-content"></div>
+          </div>
+          <div className="picture">
+            <img src="/images/header-pic2.png" className="img-fluid" alt="" />
           </div>
         </div>
       </header>
+
+      <main className="about">
+        <div className="container">
+          <div className="about-section"></div>
+        </div>
+      </main>
     </div>
   );
 }
