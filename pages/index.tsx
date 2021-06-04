@@ -47,7 +47,7 @@ export default function Home() {
             </h1>
             <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
             <div className="btn-contact">
-              <button className="btn btn-secondary rounded p-2 px-4">
+              <button className="btn rounded p-2 px-4">
                 <i className="bx bx-mail-send"></i>
                 <p>Get In Touch</p>
               </button>
@@ -58,21 +58,22 @@ export default function Home() {
             </div>
           </div>
           <div className="picture">
-            <img src="/images/header-pic2.png" className="img-fluid" alt="" />
+            <img src="/images/header-pic.png" className="img-fluid" alt="" />
           </div>
         </div>
       </header>
 
-      <main className="about">
+      <section className="about">
         <div className="container">
           <div className="about-section"></div>
         </div>
-      </main>
-      <main className="about">
+      </section>
+
+      <section className="services">
         <div className="container">
           <div className="about-section"></div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
