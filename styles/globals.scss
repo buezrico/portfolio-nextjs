@@ -100,7 +100,7 @@ p {
 }
 
 header {
-  height: 85vh;
+  height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ header {
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    height: 80vh;
+    height: 85vh;
   }
 
   .content {
@@ -267,12 +267,12 @@ header {
   .about-section {
     @media screen and (min-width: 768px) {
       h1 {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
     @media screen and (min-width: 992px) {
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
   }

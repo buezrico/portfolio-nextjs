@@ -67,6 +67,13 @@ export default function Home() {
         <div className="container">
           <div className="about-section">
             <h1 className="">Get To Know Me</h1>
+
+            <div className="about-content">
+              <div className="about-content-picture">
+                <img src="" alt="" />
+              </div>
+              <div className="about-content-details"></div>
+            </div>
           </div>
         </div>
       </section>
