@@ -47,25 +47,27 @@ export default function Home() {
             </h1>
             <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
             <div className="btn-contact">
-              <button className="btn rounded p-2 px-4">
+              <button className="btn rounded-0 p-2 px-4">
                 <i className="bx bx-mail-send"></i>
                 <p>Get In Touch</p>
               </button>
             </div>
-            <div className="arrow-down bx-fade-down text-primary">
+            <div className="arrow-down bx-fade-down">
               <i className="bx bxs-chevrons-down"></i>
               <span>About Me</span>
             </div>
           </div>
           <div className="picture">
-            <img src="/images/header-pic.png" className="img-fluid" alt="" />
+            <img src="/images/header-pic3.png" className="img-fluid" alt="" />
           </div>
         </div>
       </header>
 
       <section className="about">
         <div className="container">
-          <div className="about-section"></div>
+          <div className="about-section">
+            <h1 className="">Get To Know Me</h1>
+          </div>
         </div>
       </section>
 

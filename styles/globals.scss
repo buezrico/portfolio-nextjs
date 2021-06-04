@@ -46,7 +46,7 @@ p {
 
       i {
         margin-right: 0.5rem;
-        color: $secondary;
+        color: $primary;
       }
       p {
         margin: 0;
@@ -64,12 +64,12 @@ p {
     }
   }
   nav {
-    background: $primary;
-    color: $secondary;
+    background: $light;
+    color: $dark;
     position: sticky;
     top: 0;
     width: 100%;
-    box-shadow: 0 0 0.5rem $primary;
+    box-shadow: 0 0 0.8rem $primary;
     z-index: 10;
     .inner {
       display: flex;
@@ -77,8 +77,8 @@ p {
       justify-content: space-between;
 
       i {
-        background: $secondary;
-        color: $primary;
+        background: $primary;
+        color: $light;
         cursor: pointer;
         padding: 0.2rem;
         border-radius: 35%;
@@ -87,10 +87,10 @@ p {
       ul {
         li {
           a {
-            color: $secondary;
+            color: $primary;
             cursor: pointer;
             &:hover {
-              color: $light;
+              color: $dark;
             }
           }
         }
@@ -100,12 +100,16 @@ p {
 }
 
 header {
-  height: 80vh;
+  height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    height: 80vh;
+  }
 
   .content {
     height: 100%;
@@ -118,21 +122,15 @@ header {
     }
 
     .styled-title {
-      font-family: "Bodoni", sans-serif;
-      background: -webkit-linear-gradient(
-        $primary,
-        $secondary,
-        $primary,
-        $secondary,
-        $primary
-      );
+      font-family: "Poppins", sans-serif;
+      background: $primary;
       background-clip: unset;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .text {
       width: 60%;
-      color: $secondary;
+      color: $dark;
       overflow: visible;
       .btn-contact {
         display: flex;
@@ -142,7 +140,7 @@ header {
         .btn {
           font-size: 1.2rem;
           background: $primary;
-          color: $secondary;
+          color: $light;
           width: 70%;
           display: flex;
           align-items: center;
@@ -150,14 +148,15 @@ header {
           p {
             margin: 0;
           }
-          // border: 4px solid $secondary;
 
-          box-shadow: 0 0 2px $primary, 0 0 10px $primary, 0 0 30px $primary,
-            0 0 500px $primary;
+          box-shadow: 0 0 1px $primary, 0 0 5px $primary, 0 0 10px $primary,
+            0 0 0 $primary;
           -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 
           &:hover {
-            color: $secondary;
+            background: transparent;
+            color: $primary;
+            border: 2px solid $primary;
           }
         }
       }
@@ -166,14 +165,21 @@ header {
         display: flex;
         align-items: center;
         cursor: pointer;
+        color: $primary;
 
         @media screen and (max-width: 768px) {
           justify-content: center;
           margin-top: 0.5rem;
         }
         i {
-          font-size: 2.5em;
+          font-size: 2em;
           margin-right: 0.5rem;
+          @media screen and (min-width: 768px) {
+            font-size: 3em;
+          }
+          @media screen and (min-width: 992px) {
+            font-size: 4em;
+          }
         }
       }
       // @media screen and (max-width: 568px) {
@@ -256,6 +262,20 @@ header {
 .about {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
   height: 100vh;
+  color: $primary;
+
+  .about-section {
+    @media screen and (min-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
 }
 
 .services {
