@@ -21,28 +21,27 @@ export default function Home() {
         />
       </Head>
 
+      <div className="top-info ">
+        <div className="phone contact-info">
+          <i className="bx bx-phone-call bx-tada-hover"></i>
+          <p>+234 810 916 9579</p>
+        </div>
+        <div className="email contact-info ">
+          <i className="bx bx-mail-send bx-tada-hover"></i>
+          <p>ricobuez@gmail.com</p>
+        </div>
+        <div className="social">
+          <i className="bx bxl-github bx-tada-hover"></i>
+          <i className="bx bxl-instagram bx-tada-hover"></i>
+          <i className="bx bxl-twitter bx-tada-hover"></i>
+          <i className="bx bxl-whatsapp bx-tada-hover"></i>
+        </div>
+      </div>
+      <Navbar />
       <header>
-        {/* <div className="top-info ">
-          <div className="phone contact-info">
-            <i className="bx bx-phone-call bx-tada-hover"></i>
-            <p>+234 810 916 9579</p>
-          </div>
-          <div className="email contact-info ">
-            <i className="bx bx-mail-send bx-tada-hover"></i>
-            <p>ricobuez@gmail.com</p>
-          </div>
-          <div className="social">
-            <i className="bx bxl-github bx-tada-hover"></i>
-            <i className="bx bxl-instagram bx-tada-hover"></i>
-            <i className="bx bxl-twitter bx-tada-hover"></i>
-            <i className="bx bxl-whatsapp bx-tada-hover"></i>
-          </div>
-        </div> */}
-        <Navbar />
-
         <div className="content container">
           <div className="text">
-            <h1 className="mb-2 bx-tada text-center">👋</h1>
+            <h2 className="mb-2 bx-tada text-center">👋</h2>
             <h1 className="mb-2 ">
               I am <span className="styled-title">Chibueze</span>.
             </h1>
