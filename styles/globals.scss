@@ -22,19 +22,22 @@ p {
   margin: 0;
 }
 
+.portfolio {
+  position: relative;
+}
+
 header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   .top-info {
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+
     .contact-info {
       display: flex;
       align-items: center;
@@ -64,14 +67,10 @@ header {
   nav {
     background: rgba(217, 92, 50);
     color: $primary;
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: fixed;
     width: 100%;
     box-shadow: 0 0 0.5rem $secondary;
-    // top: 0;
     z-index: 10;
-    // box-shadow: ;
     .inner {
       display: flex;
       align-items: center;
@@ -82,7 +81,7 @@ header {
         color: $light;
         cursor: pointer;
         padding: 0.2rem;
-        border-radius: 50%;
+        border-radius: 35%;
       }
 
       ul {
@@ -98,17 +97,13 @@ header {
       }
     }
   }
-  h1 {
-    color: linear-gradient();
-  }
 
   .content {
-    height: 90%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1rem;
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
@@ -227,5 +222,5 @@ header {
 }
 
 .about {
-  // height: 100vh;
+  height: 100vh;
 }

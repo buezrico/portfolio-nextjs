@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="portfolio">
       <Head>
         <title>Buez Rico</title>
         <meta name="description" content="My Portfolio Website" />
@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       <header>
-        <div className="top-info ">
+        {/* <div className="top-info ">
           <div className="phone contact-info">
             <i className="bx bx-phone-call bx-tada-hover"></i>
             <p>+234 810 916 9579</p>
@@ -37,7 +37,7 @@ export default function Home() {
             <i className="bx bxl-twitter bx-tada-hover"></i>
             <i className="bx bxl-whatsapp bx-tada-hover"></i>
           </div>
-        </div>
+        </div> */}
         <Navbar />
 
         <div className="content container">
@@ -64,6 +64,11 @@ export default function Home() {
         </div>
       </header>
 
+      <main className="about">
+        <div className="container">
+          <div className="about-section"></div>
+        </div>
+      </main>
       <main className="about">
         <div className="container">
           <div className="about-section"></div>
