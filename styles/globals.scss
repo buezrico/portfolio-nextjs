@@ -60,6 +60,12 @@ p {
         padding: 0.3rem;
         border-radius: 50%;
         cursor: pointer;
+
+        &:hover {
+          background: none;
+          color: $primary;
+          box-shadow: 0 1px 5px 1px $primary;
+        }
       }
     }
   }
@@ -87,7 +93,7 @@ p {
         &:hover {
           background: none;
           color: $primary;
-          box-shadow: 0 0 30px $primary;
+          box-shadow: 0 10px 10px $primary;
         }
       }
 
@@ -236,11 +242,10 @@ header {
       }
     }
     .picture {
-      display: grid;
-      place-items: center;
-      overflow: visible;
-
+      display: flex;
+      justify-content: flex-end;
       @media screen and (max-width: 768px) {
+        justify-content: center;
         order: -1;
         width: 100%;
       }
@@ -248,6 +253,7 @@ header {
       img {
         width: 100%;
         max-width: 12rem;
+        // object-fit: contain;
 
         // @media screen and (min-width: 568px) {
         //   max-width: 25rem;
@@ -274,16 +280,17 @@ header {
       border-left: 2px solid $primary;
       padding-left: 1rem;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
       h1 {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
       }
     }
-    @media screen and (min-width: 992px) {
-      h1 {
-        font-size: 5rem;
-      }
-    }
+    // @media screen and (min-width: 992px) {
+    //   h1 {
+    //     font-size: 5rem;
+    //   }
+    // }
   }
 }
 
