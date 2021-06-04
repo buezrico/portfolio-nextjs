@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Buez */}
         </a>
 
-        <i className="bx bx-menu bx-tada-hover bx-sm d-md-none"></i>
+        <i className="bx bx-menu  bx-sm d-md-none"></i>
 
         <div className="d-none d-md-flex">
           <ul className="nav">

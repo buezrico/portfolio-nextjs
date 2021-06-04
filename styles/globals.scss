@@ -64,13 +64,14 @@ p {
     }
   }
   nav {
-    background: $light;
+    // background: $light;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
     color: $dark;
     position: sticky;
     top: 0;
     width: 100%;
     box-shadow: 0 0 0.8rem $primary;
-    z-index: 10;
+    z-index: 20;
     .inner {
       display: flex;
       align-items: center;
@@ -81,7 +82,13 @@ p {
         color: $light;
         cursor: pointer;
         padding: 0.2rem;
-        border-radius: 35%;
+        border-radius: 20%;
+
+        &:hover {
+          background: none;
+          color: $primary;
+          box-shadow: 0 0 30px $primary;
+        }
       }
 
       ul {
@@ -123,10 +130,8 @@ header {
 
     .styled-title {
       font-family: "Poppins", sans-serif;
-      background: $primary;
-      background-clip: unset;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: $primary;
+      font-weight: normal;
     }
     .text {
       width: 60%;
@@ -265,6 +270,10 @@ header {
   color: $primary;
 
   .about-section {
+    h1 {
+      border-left: 2px solid $primary;
+      padding-left: 1rem;
+    }
     @media screen and (min-width: 768px) {
       h1 {
         font-size: 1rem;
