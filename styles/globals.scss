@@ -275,37 +275,101 @@ header {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 90vh;
+  background-attachment: fixed;
+  height: 100%;
   color: $primary;
-  // &::after {
-  //   background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-  //   content: "";
-  //   z-index: 10;
-  // }
 
-  .about-section {
-    h1 {
-      border-left: 2px solid $primary;
-      padding-left: 1rem;
-    }
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 1.3rem;
-        font-weight: bold;
+  .wrapper {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    height: 100%;
+    .inner {
+      height: 100%;
+      .about-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        h1 {
+          border-left: 2px solid $primary;
+          padding-left: 1rem;
+        }
+        @media screen and (max-width: 768px) {
+          h1 {
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+        }
+
+        .about-content-wrapper {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .about-content {
+            display: flex;
+            align-items: center;
+            // height: 100%;
+            @media screen and (max-width: 768px) {
+              flex-direction: column;
+              .about-content-desc {
+                width: 100%;
+                padding: 1rem;
+              }
+              .about-content-contact {
+                padding: 1rem;
+                width: 90%;
+              }
+            }
+
+            &-desc {
+              width: 50%;
+              background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+              box-shadow: 0 0 0.8rem $primary;
+              padding: 2rem;
+
+              .hire-btn {
+                // width: 50%;
+                text-align: right;
+                .btn {
+                  box-shadow: 0 0 0.8rem $primary;
+                }
+              }
+            }
+
+            &-contact {
+              width: 50%;
+              background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+              box-shadow: 0 0 0.8rem $primary;
+              padding: 1rem;
+              h4 {
+                text-align: right;
+              }
+
+              .about-contact {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 0.7rem;
+                @media screen and (max-width: 768px) {
+                  margin-bottom: 0.4rem;
+                }
+
+                p {
+                  margin: 0;
+                }
+                i {
+                  margin-right: 1rem;
+                }
+              }
+            }
+          }
+        }
+        // @media screen and (min-width: 992px) {
+        //   h1 {
+        //     font-size: 5rem;
+        //   }
+        // }
       }
     }
-
-    .about-content {
-      display: flex;
-      @media screen and (max-width: 768px) {
-        display: block;
-      }
-    }
-    // @media screen and (min-width: 992px) {
-    //   h1 {
-    //     font-size: 5rem;
-    //   }
-    // }
   }
 }
 

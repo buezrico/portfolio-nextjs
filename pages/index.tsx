@@ -64,26 +64,46 @@ export default function Home() {
       </header>
 
       <section className="about">
-        <div className="container">
-          <div className="about-section">
-            <h1 className="">Get To Know Me</h1>
+        <div className="wrapper">
+          <div className="container inner">
+            <div className="about-section">
+              <h1 className="mb-5">Get To Know Me</h1>
 
-            <div className="about-content">
-              <div className="about-content-desc">
-                <h4>About Me</h4>
-                <p>
-                  I'm a Web Developer, I make cool and awesome websites. I enjoy
-                  building Frontend applications mostly.
-                </p>
-                <button className="btn btn-outline-primary rounded-0 px-4">
-                  Hire Me
-                </button>
-              </div>
-              <div className="about-content-contact">
-                <p>
-                  I'm a Web Developer, I make cool and awesome websites. I enjoy
-                  building Frontend applications mostly.
-                </p>
+              <div className="about-content-wrapper">
+                <div className="about-content">
+                  <div className="about-content-desc">
+                    <h4>About Me</h4>
+                    <p>
+                      I'm a Web Developer, I make cool and awesome websites. I
+                      enjoy building Frontend applications mostly.
+                    </p>
+                    <div className="hire-btn">
+                      <button className="btn btn-outline-primary rounded-0 px-4">
+                        Hire Me
+                      </button>
+                    </div>
+                  </div>
+                  <div className="about-content-contact">
+                    <h4>Contact</h4>
+                    <div className="name about-contact">
+                      <i className="bx bx-user"></i>
+                      <p>Okoronkwo Chibueze</p>
+                    </div>
+                    <div className="phone about-contact">
+                      <i className="bx bx-phone-call"></i>
+                      <p>+234 810 916 9579</p>
+                    </div>
+                    <div className="email about-contact">
+                      <i className="bx bx-mail-send"></i>
+                      <p>ricobuez@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="techs mt-5">
+                  <h1>Technologies I'm familiar with</h1>
+                  <div className="techs-slide"></div>
+                </div>
               </div>
             </div>
           </div>
