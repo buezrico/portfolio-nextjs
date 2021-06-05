@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <div className="arrow-down bx-fade-down">
               <i className="bx bxs-chevrons-down"></i>
-              <span>About Me</span>
+              <span>Get to know Me</span>
             </div>
           </div>
           <div className="picture">
@@ -69,10 +69,22 @@ export default function Home() {
             <h1 className="">Get To Know Me</h1>
 
             <div className="about-content">
-              <div className="about-content-picture">
-                <img src="" alt="" />
+              <div className="about-content-desc">
+                <h4>About Me</h4>
+                <p>
+                  I'm a Web Developer, I make cool and awesome websites. I enjoy
+                  building Frontend applications mostly.
+                </p>
+                <button className="btn btn-outline-primary rounded-0 px-4">
+                  Hire Me
+                </button>
               </div>
-              <div className="about-content-details"></div>
+              <div className="about-content-contact">
+                <p>
+                  I'm a Web Developer, I make cool and awesome websites. I enjoy
+                  building Frontend applications mostly.
+                </p>
+              </div>
             </div>
           </div>
         </div>

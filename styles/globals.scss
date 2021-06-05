@@ -114,7 +114,7 @@ p {
 
 header {
   height: 95vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -271,9 +271,17 @@ header {
 }
 
 .about {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
-  height: 100vh;
+  background-image: url("../public/images/pp.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90vh;
   color: $primary;
+  // &::after {
+  //   background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  //   content: "";
+  //   z-index: 10;
+  // }
 
   .about-section {
     h1 {
@@ -286,6 +294,13 @@ header {
         font-weight: bold;
       }
     }
+
+    .about-content {
+      display: flex;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
     // @media screen and (min-width: 992px) {
     //   h1 {
     //     font-size: 5rem;
@@ -294,7 +309,7 @@ header {
   }
 }
 
-.services {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
-  height: 100vh;
-}
+// .services {
+//   background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+//   height: 100vh;
+// }
