@@ -325,12 +325,28 @@ header {
               background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
               box-shadow: 0 0 0.8rem $primary;
               padding: 2rem;
+              transition: all 0.5s ease-in-out;
+
+              &:hover {
+                background: $primary;
+                color: $light;
+
+                .btn {
+                  border-color: $light;
+                  color: $light;
+
+                  &:hover {
+                    box-shadow: 0 0 0.8rem $light;
+                  }
+                }
+              }
 
               .hire-btn {
                 // width: 50%;
                 text-align: right;
                 .btn {
                   box-shadow: 0 0 0.8rem $primary;
+                  font-weight: bold;
                 }
               }
             }
@@ -340,8 +356,14 @@ header {
               background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
               box-shadow: 0 0 0.8rem $primary;
               padding: 1rem;
+              transition: all 0.5s ease-in-out;
               h4 {
                 text-align: right;
+              }
+
+              &:hover {
+                background: $primary;
+                color: $light;
               }
 
               .about-contact {
@@ -360,6 +382,62 @@ header {
                   margin-right: 1rem;
                 }
               }
+            }
+          }
+        }
+        .techs {
+          .techs-slide {
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+            box-shadow: 0 0 0.8rem $primary;
+            .slider {
+              text-align: center;
+              padding: 1rem 0;
+              transition: all 0.5s ease-in-out;
+
+              &:hover {
+                background: $primary;
+                color: $light;
+              }
+              i {
+                font-size: 5rem;
+
+                @media screen and (max-width: 768px) {
+                  font-size: 2rem;
+                }
+              }
+              p {
+                margin: 0;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .services {
+          .service {
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+            box-shadow: 0 0 0.8rem $primary;
+            padding: 1rem;
+            text-align: center;
+
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+              background: $primary;
+              color: $light;
+
+              i {
+                border: 2px solid $light;
+                box-shadow: 0 0 0.8rem $light;
+              }
+            }
+            i {
+              font-size: 2rem;
+              padding: 0.2rem 0.8rem;
+              border: 2px solid $primary;
+              border-radius: 20%;
+              font-weight: bold;
+              margin-bottom: 1.5rem;
             }
           }
         }

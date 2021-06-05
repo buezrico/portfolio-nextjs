@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
 import Navbar from "../components/Navbar";
+import TechSlideComp from "../components/TechSlideComp";
 
 export default function Home() {
   return (
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="wrapper">
           <div className="container inner">
             <div className="about-section">
-              <h1 className="mb-5">Get To Know Me</h1>
+              <h1 className="mb-3">Get To Know Me</h1>
 
               <div className="about-content-wrapper">
                 <div className="about-content">
@@ -100,9 +100,23 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="techs mt-5">
-                  <h1>Technologies I'm familiar with</h1>
-                  <div className="techs-slide"></div>
+                <div className="techs mt-5 mb-3">
+                  <h1 className="mb-3">Technologies I'm familiar with</h1>
+                  <div className="techs-slide mb-5">
+                    <TechSlideComp />
+                  </div>
+                </div>
+
+                <div className="services mt-5 mb-3">
+                  <h1 className="mb-3">What I offer</h1>
+                  <div className="mb-5 service">
+                    <i className="bx bx-code"></i>
+                    <h4>Frontend Web Development</h4>
+                    <p>
+                      Bring your Ideas to reality. I make cool and awesome
+                      websites.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
