@@ -84,7 +84,7 @@ p {
         align-items: center;
         justify-content: space-between;
 
-        i {
+        .menu-btn {
           background: $light;
           color: $primary;
           cursor: pointer;
@@ -120,17 +120,20 @@ p {
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all 0.8s ease-in-out;
+            transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             background: linear-gradient(
               rgba(0, 0, 0, 0.9),
               rgba(0, 0, 0, 0.9),
               rgba(0, 0, 0, 0.9)
             );
-            // border-top-right-radius: 50%;
             border-bottom-left-radius: 100%;
             ul {
               display: block;
               li {
+                display: flex;
+                align-items: center;
+                color: $light;
+                background: transparent;
                 a {
                   color: $light;
                 }
@@ -162,7 +165,7 @@ p {
                 top: 70%;
               }
             }
-            i {
+            .bx-x {
               position: absolute;
               bottom: 10%;
               right: 10%;
