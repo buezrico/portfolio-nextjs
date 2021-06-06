@@ -124,9 +124,56 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services">
-        <div className="container">
-          <div className="about-section"></div>
+      <section className="works mb-5">
+        <div className="container inner">
+          <h1 className="mb-5">My Recent Works</h1>
+          <div className="works-section">
+            <div className="work">
+              <img src="/images/portfolio.PNG" alt="" />
+              <div className="caption">
+                <p className="title">My Portfolio using HTML and CSS</p>
+                <a href="https://www.ricobuez.netlify.app" className="link">
+                  click to view live
+                </a>
+              </div>
+            </div>
+            <div className="work">
+              <img src="/images/ticketty.png" alt="" />
+              <div className="caption">
+                <p className="title">Ticketty Web App</p>
+                {/* <a href="https://www.ricobuez.netlify.app" className="link">
+                  click to view live
+                </a> */}
+              </div>
+            </div>
+            <div className="work">
+              <img src="/images/techcreek.PNG" alt="" />
+              <div className="caption">
+                <p className="title">Techcreek E-Gaminator </p>
+                {/* <a href="https://www.ricobuez.netlify.app" className="link">
+                  click to view live
+                </a> */}
+              </div>
+            </div>
+            <div className="work">
+              <img src="/images/mindspire.png" alt="" />
+              <div className="caption">
+                <p className="title">Mindspire</p>
+                <a href="https://www.mindspire.netlify.app" className="link">
+                  click to view live
+                </a>
+              </div>
+            </div>
+            <div className="work">
+              <img src="/images/iamjane.png" alt="" />
+              <div className="caption">
+                <p className="title">I am Jane Model Portfolio Mockup</p>
+                {/* <a href="https://www.ricobuez.netlify.app" className="link">
+                  click to view live
+                </a> */}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
