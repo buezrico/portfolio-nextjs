@@ -41,6 +41,7 @@ p {
   }
   nav {
     background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 0 0.8rem $primary2 !important;
   }
 
   header {
@@ -56,8 +57,7 @@ p {
     .btn-contact {
       .btn {
         background: $primary2 !important;
-        box-shadow: 0 0 1px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
-          0 0 0 $primary2;
+        box-shadow: 0 0 0.8rem $primary2 !important;
         &:hover {
           background: $light !important;
           color: $primary2 !important;
@@ -255,7 +255,7 @@ p {
                 color: $light;
                 cursor: pointer;
                 &:hover {
-                  color: $primary;
+                  color: $dark;
                 }
               }
             }
