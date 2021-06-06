@@ -450,6 +450,9 @@ header {
         position: relative;
         overflow: hidden;
         border-radius: 1rem;
+        box-shadow: 0 0 1px $primary, 0 0 5px $primary, 0 0 10px $primary,
+          0 0 0 $primary;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 
         &:hover {
           .caption {
@@ -458,6 +461,7 @@ header {
         }
         img {
           max-width: 20rem;
+
           // max-height: 9rem;
         }
         .caption {
