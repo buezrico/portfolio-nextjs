@@ -126,7 +126,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="works mb-5">
+      <section className="works mb-5 pt-3">
         <div className="container inner">
           <h1 className="mb-5">My Recent Works</h1>
           <div className="works-section">
@@ -169,7 +169,7 @@ export default function Home() {
             <div className="work">
               <img src="/images/iamjane.png" alt="" />
               <div className="caption">
-                <p className="title">I am Jane Model Portfolio Mockup</p>
+                <p className="title">I am Jane Model Portfolio</p>
                 {/* <a href="https://www.ricobuez.netlify.app" className="link">
                   click to view live
                 </a> */}
@@ -178,6 +178,81 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="contact mt-5">
+        <div className="container inner">
+          <h1 className="mb-3">Get In Touch</h1>
+          <div className="contact-section">
+            <div className="question">
+              <h2>Do you have a project in mind</h2>
+              <i className="bx bx-question-mark"></i>
+            </div>
+            <form>
+              <div className="form">
+                <div className="form-group mb-2">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Name"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="example@example.com"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="+123 456 789 1023"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <textarea
+                    rows={Number(5)}
+                    className="form-control"
+                    placeholder="type your message here"
+                  ></textarea>
+                </div>
+
+                <div className="send-btn">
+                  <button className="btn btn-dark rounded">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div className="container inner">
+          <div className="footer-info">
+            <img src="/images/pp.png" alt="" />
+
+            <div className="footer-contact">
+              <div className="phone contact-info">
+                <i className="bx bx-phone-call bx-tada-hover"></i>
+                <p>+234 810 916 9579</p>
+              </div>
+              <div className="email contact-info ">
+                <i className="bx bx-mail-send bx-tada-hover"></i>
+                <p>ricobuez@gmail.com</p>
+              </div>
+              <div className="social">
+                <i className="bx bxl-github bx-tada-hover"></i>
+                <i className="bx bxl-instagram bx-tada-hover"></i>
+                <i className="bx bxl-twitter bx-tada-hover"></i>
+                <i className="bx bxl-whatsapp bx-tada-hover"></i>
+              </div>
+            </div>
+          </div>
+
+          <p className="copyright">Copyright @ 2021 Okoronkwo Chibueze</p>
+        </div>
+      </footer>
     </div>
   );
 }
