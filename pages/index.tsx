@@ -4,6 +4,7 @@ import { gsap, TimelineLite } from "gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
+import { Toggle, Icon } from "rsuite";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -90,6 +91,10 @@ export default function Home() {
       <Navbar />
       <header>
         <div className="content container">
+          <i
+            className={`bx toggler ${dark ? "bxs-sun" : "bxs-moon"}`}
+            onClick={() => setDark(!dark)}
+          ></i>
           <div className="text">
             <h2 className="mb-2 bx-tada text-center">👋</h2>
             <h1 className="mb-2 name-title">
@@ -113,10 +118,6 @@ export default function Home() {
               className="img-fluid profile-pic"
               alt=""
             />
-            <i
-              className="bx bx-menu position-fixed"
-              onClick={() => setDark(!dark)}
-            ></i>
           </div>
         </div>
       </header>

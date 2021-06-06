@@ -44,6 +44,9 @@ p {
   }
 
   header {
+    .toggler {
+      box-shadow: 0 10px 10px $primary2;
+    }
     .styled-title {
       color: $secondary !important;
     }
@@ -124,6 +127,10 @@ p {
     .work {
       box-shadow: 0 0 1px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
         0 0 0 $primary2 !important;
+    }
+    .caption {
+      background: $primary2-light !important;
+      color: $dark !important;
     }
   }
   .contact {
@@ -331,6 +338,21 @@ header {
     height: 85vh;
   }
 
+  .toggler {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 20;
+    font-size: 2rem;
+    cursor: pointer;
+    background: $light;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 5px 5px $primary;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
   .content {
     height: 100%;
     width: 100%;
