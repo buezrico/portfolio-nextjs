@@ -1,40 +1,48 @@
 import Image from "next/image";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
   return (
     <nav>
-      <div className="container inner">
-        <a className="navbar-brand text-secondary d-flex align-items-center">
-          <Image
-            src="/images/logo.ico"
-            height={40}
-            width={40}
-            className="img-fluid bx-tada-hover"
-          />
-          {/* Buez */}
-        </a>
+      <div className="wrapper">
+        <div className="container inner">
+          <i
+            className={`${nav ? "bx bx-x" : "bx bx-menu"}  'bx-sm d-md-none`}
+            onClick={() => setNav(!nav)}
+          ></i>
+          <a className="navbar-brand text-secondary d-flex align-items-center">
+            <Image
+              src="/images/logo.ico"
+              height={40}
+              width={40}
+              className="img-fluid bx-tada-hover"
+            />
+            {/* Buez */}
+          </a>
 
-        <i className="bx bx-menu  bx-sm d-md-none"></i>
+          <div className="mobile-nav" style={{ left: nav ? "0%" : "" }}>
+            <ul className="nav ">
+              <li className="nav-item home-link">
+                <a className="nav-link bx-tada-hover">Home</a>
+              </li>
+              <li className="nav-item about-link">
+                <a className="nav-link bx-tada-hover">About Me</a>
+              </li>
 
-        <div className="d-none d-md-flex">
-          <ul className="nav">
-            <li className="nav-item">
-              <a className="nav-link bx-tada-hover">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link bx-tada-hover">About Me</a>
-            </li>
+              <li className="nav-item services-link">
+                <a className="nav-link bx-tada-hover">Services</a>
+              </li>
+              <li className="nav-item works-link">
+                <a className="nav-link bx-tada-hover">Works</a>
+              </li>
+              <li className="nav-item contact-link">
+                <a className="nav-link bx-tada-hover">Get In Touch</a>
+              </li>
+            </ul>
 
-            <li className="nav-item">
-              <a className="nav-link bx-tada-hover">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link bx-tada-hover">Works</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link bx-tada-hover">Get In Touch</a>
-            </li>
-          </ul>
+            <i className="bx bx-x d-md-none" onClick={() => setNav(!nav)}></i>
+          </div>
         </div>
       </div>
     </nav>

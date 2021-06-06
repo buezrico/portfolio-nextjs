@@ -14,7 +14,7 @@ export default function Home() {
       ".name-title",
       {
         duration: 2,
-        ease: Bounce.easeOut,
+        ease: "elastic.out",
         y: -100,
         opacity: 0,
         delay: 1,
@@ -25,7 +25,7 @@ export default function Home() {
       ".profile-pic",
       {
         duration: 2,
-        ease: Bounce.easeOut,
+        ease: "elastic.out",
         y: -100,
         opacity: 0,
         delay: 1,

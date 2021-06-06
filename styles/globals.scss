@@ -76,32 +76,96 @@ p {
     width: 100%;
     box-shadow: 0 0 0.8rem $primary;
     z-index: 20;
-    .inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
 
-      i {
-        background: $light;
-        color: $primary;
-        cursor: pointer;
-        padding: 0.2rem;
-        border-radius: 20%;
+    .wrapper {
+      position: relative;
+      .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-        &:hover {
-          background: $primary;
-          color: $light;
-          box-shadow: 0 10px 10px $primary;
-        }
-      }
+        i {
+          background: $light;
+          color: $primary;
+          cursor: pointer;
+          padding: 0.2rem;
+          border-radius: 20%;
+          transition: all 0.5s ease-in-out;
 
-      ul {
-        li {
-          a {
+          &:hover {
+            background: $primary;
             color: $light;
-            cursor: pointer;
-            &:hover {
-              color: $primary;
+            box-shadow: 0 10px 10px $primary;
+          }
+        }
+
+        .mobile-nav {
+          ul {
+            li {
+              a {
+                color: $light;
+                cursor: pointer;
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 768px) {
+            position: absolute;
+            left: -100%;
+            top: 100%;
+            width: 100%;
+            height: 65vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.8s ease-in-out;
+            background: linear-gradient(
+              rgba(0, 0, 0, 0.9),
+              rgba(0, 0, 0, 0.9),
+              rgba(0, 0, 0, 0.9)
+            );
+            // border-top-right-radius: 50%;
+            border-bottom-left-radius: 100%;
+            ul {
+              display: block;
+              li {
+                a {
+                  color: $light;
+                }
+              }
+
+              .home-link {
+                position: absolute;
+                left: 5%;
+                top: 10%;
+              }
+              .about-link {
+                position: absolute;
+                left: 15%;
+                top: 25%;
+              }
+              .services-link {
+                position: absolute;
+                left: 30%;
+                top: 40%;
+              }
+              .works-link {
+                position: absolute;
+                left: 45%;
+                top: 55%;
+              }
+              .contact-link {
+                position: absolute;
+                left: 55%;
+                top: 70%;
+              }
+            }
+            i {
+              position: absolute;
+              bottom: 10%;
+              right: 10%;
             }
           }
         }
