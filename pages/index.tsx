@@ -72,6 +72,7 @@ export default function Home() {
               <div className="about-content-wrapper">
                 <div className="about-content">
                   <div className="about-content-desc">
+                    <div className="desc-slide"></div>
                     <h4>About Me</h4>
                     <p>
                       I'm a Web Developer, I make cool and awesome websites. I
@@ -84,6 +85,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="about-content-contact">
+                    <div className="contact-slide"></div>
                     <h4>Contact</h4>
                     <div className="name about-contact">
                       <i className="bx bx-user"></i>
@@ -132,7 +134,7 @@ export default function Home() {
               <img src="/images/portfolio.PNG" alt="" />
               <div className="caption">
                 <p className="title">My Portfolio using HTML and CSS</p>
-                <a href="https://www.ricobuez.netlify.app" className="link">
+                <a href="https://ricobuez.netlify.app" className="link">
                   click to view live
                 </a>
               </div>
@@ -159,7 +161,7 @@ export default function Home() {
               <img src="/images/mindspire.png" alt="" />
               <div className="caption">
                 <p className="title">Mindspire</p>
-                <a href="https://www.mindspire.netlify.app" className="link">
+                <a href="https://mindspire.netlify.app" className="link">
                   click to view live
                 </a>
               </div>
