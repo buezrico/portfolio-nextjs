@@ -1,9 +1,57 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap, TimelineLite, Bounce } from "gsap";
+import { TextPlugin } from "gsap/dist/TextPlugin";
 import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
 
+gsap.registerPlugin(TextPlugin);
+
 export default function Home() {
+  useEffect(() => {
+    const tl = new TimelineLite();
+    tl.from(
+      ".name-title",
+      {
+        duration: 2,
+        ease: Bounce.easeOut,
+        y: -100,
+        opacity: 0,
+        delay: 1,
+      },
+      ""
+    );
+    tl.from(
+      ".profile-pic",
+      {
+        duration: 2,
+        ease: Bounce.easeOut,
+        y: -100,
+        opacity: 0,
+        delay: 1,
+      },
+      ""
+    );
+    tl.from(
+      ".btn-contact",
+      {
+        duration: 3,
+        ease: "elastic.out",
+        x: -100,
+        opacity: 0,
+        delay: 2,
+      },
+      ""
+    );
+
+    gsap.to(".about-title", {
+      duration: 3,
+      text: "And I'm a Frontend Web Developer",
+      ease: "none",
+      delimiter: "",
+      delay: 3,
+    });
+  }, []);
   return (
     <div className="portfolio">
       <Head>
@@ -42,10 +90,10 @@ export default function Home() {
         <div className="content container">
           <div className="text">
             <h2 className="mb-2 bx-tada text-center">👋</h2>
-            <h1 className="mb-2 ">
+            <h1 className="mb-2 name-title">
               I am <span className="styled-title">Chibueze</span>.
             </h1>
-            <h4 className="mb-3">And I'm a Frontend Web Developer</h4>
+            <h4 className="mb-3 about-title"></h4>
             <div className="btn-contact">
               <button className="btn rounded-0 p-2 px-4">
                 <i className="bx bx-mail-send"></i>
@@ -58,7 +106,11 @@ export default function Home() {
             </div>
           </div>
           <div className="picture">
-            <img src="/images/header-pic3.png" className="img-fluid" alt="" />
+            <img
+              src="/images/header-pic3.png"
+              className="img-fluid profile-pic"
+              alt=""
+            />
           </div>
         </div>
       </header>
