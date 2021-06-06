@@ -146,7 +146,7 @@ p {
               }
               .about-link {
                 position: absolute;
-                left: 15%;
+                left: 20%;
                 top: 25%;
               }
               .services-link {
@@ -164,11 +164,11 @@ p {
                 left: 55%;
                 top: 70%;
               }
-            }
-            .bx-x {
-              position: absolute;
-              bottom: 10%;
-              right: 10%;
+              .close-link {
+                position: absolute;
+                left: 90%;
+                top: 90%;
+              }
             }
           }
         }

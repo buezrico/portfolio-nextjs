@@ -46,12 +46,13 @@ const Navbar = () => {
                 <i className="bx bx-mail-send"></i>
                 <a className="nav-link bx-tada-hover">Get In Touch</a>
               </li>
+              <li className="nav-item close-link">
+                <i
+                  className="bx bx-x menu-btn"
+                  onClick={() => setNav(!nav)}
+                ></i>
+              </li>
             </ul>
-
-            <i
-              className="bx bx-x d-md-none menu-btn"
-              onClick={() => setNav(!nav)}
-            ></i>
           </div>
         </div>
       </div>

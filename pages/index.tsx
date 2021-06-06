@@ -1,6 +1,6 @@
 import Head from "next/head";
-import React, { useEffect } from "react";
-import { gsap, TimelineLite, Bounce } from "gsap";
+import React, { useEffect, useState } from "react";
+import { gsap, TimelineLite } from "gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
@@ -8,6 +8,8 @@ import TechSlideComp from "../components/TechSlideComp";
 gsap.registerPlugin(TextPlugin);
 
 export default function Home() {
+  const [dark, setDark] = useState(false);
+
   useEffect(() => {
     const tl = new TimelineLite();
     tl.from(
@@ -53,7 +55,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="portfolio">
+    <div className={`${dark ? "bg-dark" : ""} portfolio`}>
       <Head>
         <title>Buez Rico</title>
         <meta name="description" content="My Portfolio Website" />
@@ -111,6 +113,7 @@ export default function Home() {
               className="img-fluid profile-pic"
               alt=""
             />
+            <i className="bx bx-menu" onClick={() => setDark(!dark)}></i>
           </div>
         </div>
       </header>
