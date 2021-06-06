@@ -37,11 +37,10 @@ p {
       justify-content: center;
       display: flex;
       margin-bottom: 0.1rem;
+      align-items: center;
       color: $dark;
       @media screen and (min-width: 768px) {
         margin-right: 3rem;
-
-        align-items: center;
       }
 
       i {
@@ -70,8 +69,7 @@ p {
     }
   }
   nav {
-    // background: $light;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    background: rgba(0, 0, 0, 0.8);
     color: $dark;
     position: sticky;
     top: 0;
@@ -100,10 +98,10 @@ p {
       ul {
         li {
           a {
-            color: $primary;
+            color: $light;
             cursor: pointer;
             &:hover {
-              color: $dark;
+              color: $primary;
             }
           }
         }
@@ -142,7 +140,7 @@ header {
     .text {
       width: 60%;
       color: $dark;
-      overflow: visible;
+
       .btn-contact {
         display: flex;
         @media screen and (max-width: 768px) {
@@ -152,12 +150,13 @@ header {
           font-size: 1.2rem;
           background: $primary;
           color: $light;
-          width: 70%;
           display: flex;
           align-items: center;
-          justify-content: space-around;
           p {
             margin: 0;
+          }
+          i {
+            margin-right: 1rem;
           }
 
           box-shadow: 0 0 1px $primary, 0 0 5px $primary, 0 0 10px $primary,
@@ -193,22 +192,6 @@ header {
           }
         }
       }
-      // @media screen and (max-width: 568px) {
-      //   h1 {
-      //     font-size: 1.2rem;
-      //     span {
-      //       font-size: 1.5rem;
-      //     }
-      //   }
-      //   h4 {
-      //     font-size: 1.2rem;
-      //   }
-      //   .btn-contact {
-      //     .btn {
-      //       font-size: 1.2rem;
-      //     }
-      //   }
-      // }
       @media screen and (max-width: 768px) {
         width: 100%;
         text-align: center;
@@ -253,12 +236,6 @@ header {
       img {
         width: 100%;
         max-width: 12rem;
-        // object-fit: contain;
-
-        // @media screen and (min-width: 568px) {
-        //   max-width: 25rem;
-        // }
-
         @media screen and (min-width: 768px) {
           max-width: 30rem;
         }
@@ -307,7 +284,6 @@ header {
           .about-content {
             display: flex;
             align-items: center;
-            // height: 100%;
             @media screen and (max-width: 768px) {
               flex-direction: column;
               .about-content-desc {
@@ -342,7 +318,6 @@ header {
               }
 
               .hire-btn {
-                // width: 50%;
                 text-align: right;
                 .btn {
                   box-shadow: 0 0 0.8rem $primary;
@@ -438,14 +413,11 @@ header {
               border-radius: 20%;
               font-weight: bold;
               margin-bottom: 1.5rem;
+              background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+              box-shadow: 0 0 0.8rem $primary;
             }
           }
         }
-        // @media screen and (min-width: 992px) {
-        //   h1 {
-        //     font-size: 5rem;
-        //   }
-        // }
       }
     }
   }
