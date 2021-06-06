@@ -55,7 +55,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className={`${dark ? "bg-dark" : ""} portfolio`}>
+    <div className={`${dark ? "dark-mode" : ""} portfolio`}>
       <Head>
         <title>Buez Rico</title>
         <meta name="description" content="My Portfolio Website" />
@@ -109,11 +109,14 @@ export default function Home() {
           </div>
           <div className="picture">
             <img
-              src="/images/header-pic3.png"
+              src={`/images/header-pic${dark ? "2" : "3"}.png`}
               className="img-fluid profile-pic"
               alt=""
             />
-            <i className="bx bx-menu" onClick={() => setDark(!dark)}></i>
+            <i
+              className="bx bx-menu position-fixed"
+              onClick={() => setDark(!dark)}
+            ></i>
           </div>
         </div>
       </header>
@@ -134,9 +137,7 @@ export default function Home() {
                       enjoy building Frontend applications mostly.
                     </p>
                     <div className="hire-btn">
-                      <button className="btn btn-outline-primary rounded-0 px-4">
-                        Hire Me
-                      </button>
+                      <button className="btn rounded-0 px-4">Hire Me</button>
                     </div>
                   </div>
                   <div className="about-content-contact">
@@ -274,7 +275,9 @@ export default function Home() {
                 </div>
 
                 <div className="send-btn">
-                  <button className="btn btn-dark rounded">Send Message</button>
+                  <button className="btn rounded px-5 py-2">
+                    Send Message
+                  </button>
                 </div>
               </div>
             </form>

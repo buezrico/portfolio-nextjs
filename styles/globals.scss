@@ -22,6 +22,144 @@ p {
   margin: 0;
 }
 
+.dark-mode {
+  background: $dark;
+
+  .top-info {
+    .contact-info {
+      color: $light !important;
+      i {
+        color: $secondary !important;
+      }
+    }
+    .social {
+      i {
+        background: $secondary !important;
+        color: $dark !important;
+      }
+    }
+  }
+  nav {
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  header {
+    .styled-title {
+      color: $secondary !important;
+    }
+    .text {
+      color: $light !important;
+    }
+    .btn-contact {
+      .btn {
+        background: $primary2 !important;
+        box-shadow: 0 0 1px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
+          0 0 0 $primary2;
+        &:hover {
+          background: $light !important;
+          color: $primary2 !important;
+          border: 2px solid $primary2 !important;
+        }
+      }
+    }
+    .arrow-down {
+      color: $light !important;
+    }
+  }
+
+  .about {
+    color: $primary2 !important;
+
+    .about-content-desc {
+      box-shadow: 0 0 0.8rem $primary2 !important;
+      z-index: 1;
+
+      .desc-slide {
+        background: $primary2-light !important;
+      }
+    }
+    .about-content-contact {
+      box-shadow: 0 0 0.8rem $primary2 !important;
+      z-index: 1;
+
+      .contact-slide {
+        background: $primary2-light !important;
+      }
+    }
+    .hire-btn {
+      .btn {
+        border-color: $primary2 !important;
+        color: $primary2 !important;
+      }
+    }
+    h1 {
+      color: $light !important;
+      border-left-color: $primary2 !important;
+    }
+    .techs-slide {
+      box-shadow: 0 0 0.8rem $primary2 !important;
+      .slider {
+        &:hover {
+          background: $primary2-light !important;
+        }
+      }
+    }
+    .services {
+      .service {
+        box-shadow: 0 0 0.8rem $primary2 !important;
+        &:hover {
+          background: $primary2-light !important;
+        }
+        i {
+          border: 2px solid $primary2 !important;
+        }
+      }
+    }
+  }
+  .works {
+    h1 {
+      color: $light !important;
+      border-left-color: $primary2 !important;
+    }
+    .work {
+      box-shadow: 0 0 1px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
+        0 0 0 $primary2 !important;
+    }
+  }
+  .contact {
+    h1 {
+      border-right: 2px solid $primary;
+      color: $primary2 !important;
+    }
+    .question {
+      color: $light !important;
+    }
+
+    .form-control {
+      border-bottom-color: $primary2 !important;
+    }
+    .btn {
+      background: $primary2 !important;
+    }
+  }
+  footer {
+    .footer-contact {
+      .contact-info {
+        i {
+          color: $primary2 !important;
+        }
+        p {
+          color: $light !important;
+        }
+      }
+      .social {
+        i {
+          background: $primary2 !important;
+        }
+      }
+    }
+  }
+}
 .portfolio {
   .top-info {
     display: flex;
@@ -70,7 +208,6 @@ p {
   }
   nav {
     background: rgba(0, 0, 0, 0.8);
-    color: $dark;
     position: sticky;
     top: 0;
     width: 100%;
@@ -102,6 +239,11 @@ p {
         .mobile-nav {
           ul {
             li {
+              i {
+                @media screen and (min-width: 768px) {
+                  display: none;
+                }
+              }
               a {
                 color: $light;
                 cursor: pointer;
@@ -390,8 +532,8 @@ header {
                 }
 
                 .btn {
-                  border-color: $light;
-                  color: $light;
+                  border-color: $light !important;
+                  color: $light !important;
 
                   &:hover {
                     box-shadow: 0 0 0.8rem $light;
@@ -403,6 +545,8 @@ header {
                 text-align: right;
                 .btn {
                   box-shadow: 0 0 0.8rem $primary;
+                  border-color: $primary;
+                  color: $primary;
                   font-weight: bold;
                 }
               }
@@ -621,7 +765,9 @@ header {
           display: flex;
           justify-content: flex-end;
           .btn {
-            width: 50%;
+            // width: 50%;
+            background: $primary;
+            color: $light;
           }
         }
       }
