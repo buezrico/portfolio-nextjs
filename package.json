@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "antd": "^4.16.2",
     "bootstrap": "^5.0.1",
     "boxicons": "^2.0.7",
     "gsap": "^3.6.1",

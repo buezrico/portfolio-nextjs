@@ -4,13 +4,13 @@ import { gsap, TimelineLite } from "gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
-import { Toggle, Icon } from "rsuite";
+import { Anchor } from "antd";
 
 gsap.registerPlugin(TextPlugin);
 
 export default function Home() {
   const [dark, setDark] = useState(false);
-
+  const { Link } = Anchor;
   useEffect(() => {
     const tl = new TimelineLite();
     tl.from(
@@ -72,7 +72,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="top-info ">
+      <div className="top-info " id="home">
         <div className="phone contact-info">
           <i className="bx bx-phone-call bx-tada-hover"></i>
           <p>+234 810 916 9579</p>
@@ -104,7 +104,11 @@ export default function Home() {
             <div className="btn-contact">
               <button className="btn rounded-0 p-2 px-4">
                 <i className="bx bx-mail-send"></i>
-                <p>Get In Touch</p>
+                <p>
+                  <Anchor affix={false} showInkInFixed={false}>
+                    <Link href="#contact" title="Get In Touch" />
+                  </Anchor>
+                </p>
               </button>
             </div>
             <div className="arrow-down bx-fade-down">
@@ -122,11 +126,11 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="about">
+      <section className="about" id="about">
         <div className="wrapper">
           <div className="container inner">
             <div className="about-section">
-              <h1 className="mb-3">Get To Know Me</h1>
+              <h1 className="mb-3 mt-5">Get To Know Me</h1>
 
               <div className="about-content-wrapper">
                 <div className="about-content">
@@ -138,7 +142,11 @@ export default function Home() {
                       enjoy building Frontend applications mostly.
                     </p>
                     <div className="hire-btn">
-                      <button className="btn rounded-0 px-4">Hire Me</button>
+                      <button className="btn rounded-0 px-4">
+                        <Anchor affix={false} showInkInFixed={false}>
+                          <Link href="#contact" title="Hire Me" />
+                        </Anchor>
+                      </button>
                     </div>
                   </div>
                   <div className="about-content-contact">
@@ -159,15 +167,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="techs mt-5">
-                  <h1 className="mb-3">Technologies I'm familiar with</h1>
-                  <div className="techs-slide">
-                    <TechSlideComp />
-                  </div>
-                </div>
-
-                <div className="services mt-5 mb-3">
-                  <h1 className="mb-3">What I offer</h1>
+                <div className="services mt-5" id="services">
+                  <h1 className="mb-3 mt-5">What I offer</h1>
                   <div className="mb-5 service">
                     <i className="bx bx-code-alt"></i>
                     <h4>Frontend Web Development</h4>
@@ -177,15 +178,22 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
+
+                <div className="techs mt-5 mb-3">
+                  <h1 className="mb-3">Technologies I'm familiar with</h1>
+                  <div className="techs-slide">
+                    <TechSlideComp />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="works mb-5 pt-3">
+      <section className="works mb-5 pt-3" id="works">
         <div className="container inner">
-          <h1 className="mb-5">My Recent Works</h1>
+          <h1 className="mb-5 mt-5">My Recent Works</h1>
           <div className="works-section">
             <div className="work">
               <img src="/images/portfolio.PNG" alt="" />
@@ -236,9 +244,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact mt-5">
+      <section className="contact mt-5" id="contact">
         <div className="container inner">
-          <h1 className="mb-3">Get In Touch</h1>
+          <h1 className="mb-3 mt-5">Get In Touch</h1>
           <div className="contact-section">
             <div className="question">
               <h2>Do you have a project in mind</h2>
