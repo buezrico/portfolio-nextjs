@@ -13,6 +13,7 @@ export default function Home() {
   const { Link } = Anchor;
   useEffect(() => {
     const tl = new TimelineLite();
+
     tl.from(
       ".name-title",
       {
