@@ -22,6 +22,53 @@ p {
   margin: 0;
 }
 
+.overall {
+  // display: flex;
+  // overflow: hidden;
+
+  .mode {
+    height: 100vh;
+    padding: 1rem 0;
+    text-align: center;
+    img {
+      max-width: 15rem;
+    }
+    @media screen and (max-width: 768px) {
+      h2 {
+        font-size: 1.2rem;
+      }
+      img {
+        max-width: 8rem;
+      }
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .mode-img {
+        position: relative;
+        .mode-img {
+          max-width: 20rem;
+          cursor: pointer;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .mode-img {
+          .mode-img {
+            max-width: 15rem;
+            cursor: pointer;
+          }
+          h5 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 .dark-mode {
   background: $dark;
 
