@@ -134,10 +134,18 @@ export default function Home() {
             <p>ricobuez@gmail.com</p>
           </div>
           <div className="social">
-            <i className="bx bxl-github bx-tada-hover"></i>
-            <i className="bx bxl-instagram bx-tada-hover"></i>
-            <i className="bx bxl-twitter bx-tada-hover"></i>
-            <i className="bx bxl-whatsapp bx-tada-hover"></i>
+            <a href="https://github.com/buezrico">
+              <i className="bx bxl-github bx-tada-hover"></i>
+            </a>
+            <a href="https://www.instagram.com/buez_rico">
+              <i className="bx bxl-instagram bx-tada-hover"></i>
+            </a>
+            <a href="https://twitter.com/buez_rico">
+              <i className="bx bxl-twitter bx-tada-hover"></i>
+            </a>
+            <a href="https://wa.link/londw4">
+              <i className="bx bxl-whatsapp bx-tada-hover"></i>
+            </a>
           </div>
         </div>
         <Navbar />
@@ -365,10 +373,18 @@ export default function Home() {
                   <p>ricobuez@gmail.com</p>
                 </div>
                 <div className="social">
-                  <i className="bx bxl-github bx-tada-hover"></i>
-                  <i className="bx bxl-instagram bx-tada-hover"></i>
-                  <i className="bx bxl-twitter bx-tada-hover"></i>
-                  <i className="bx bxl-whatsapp bx-tada-hover"></i>
+                  <a href="https://github.com/buezrico">
+                    <i className="bx bxl-github bx-tada-hover"></i>
+                  </a>
+                  <a href="https://www.instagram.com/buez_rico">
+                    <i className="bx bxl-instagram bx-tada-hover"></i>
+                  </a>
+                  <a href="https://twitter.com/buez_rico">
+                    <i className="bx bxl-twitter bx-tada-hover"></i>
+                  </a>
+                  <a href="https://wa.link/londw4">
+                    <i className="bx bxl-whatsapp bx-tada-hover"></i>
+                  </a>
                 </div>
               </div>
             </div>

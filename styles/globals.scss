@@ -829,6 +829,10 @@ header {
           border: none;
           border-bottom: 2px solid $primary;
           box-shadow: none;
+
+          &::placeholder {
+            color: $light;
+          }
         }
         .send-btn {
           display: flex;
