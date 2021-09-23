@@ -129,7 +129,7 @@ export default function Home() {
         <div className="top-info " id="home">
           <div className="phone contact-info">
             <i className="bx bx-phone-call bx-tada-hover"></i>
-            <p>+234 810 916 9579</p>
+            <p>08109169579</p>
           </div>
           <div className="email contact-info ">
             <i className="bx bx-mail-send bx-tada-hover"></i>

@@ -223,6 +223,7 @@ p {
     padding: 0.5rem;
 
     @media screen and (max-width: 768px) {
+      padding: 0.2rem;
       display: block;
       text-align: center;
     }
@@ -230,7 +231,7 @@ p {
     .contact-info {
       justify-content: center;
       display: flex;
-      margin-bottom: 0.1rem;
+      // margin-bottom: 0.1rem;
       align-items: center;
       color: $dark;
       @media screen and (min-width: 768px) {
@@ -250,8 +251,8 @@ p {
         color: $light;
         margin-right: 0.5rem;
         background: $primary;
-        padding: 0.3rem;
-        border-radius: 50%;
+        padding: 0.2rem;
+        border-radius: 20%;
         cursor: pointer;
 
         &:hover {
@@ -515,7 +516,7 @@ header {
 
       img {
         width: 100%;
-        max-width: 12rem;
+        max-width: 15rem;
         @media screen and (min-width: 768px) {
           max-width: 30rem;
         }
