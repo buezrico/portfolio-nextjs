@@ -17,7 +17,7 @@ const Navbar = () => {
           ></i>
           <a className="navbar-brand text-secondary d-flex align-items-center">
             <Image
-              src="/images/logo.ico"
+              src="/images/nav-pic.ico"
               height={40}
               width={40}
               className="img-fluid bx-tada-hover"

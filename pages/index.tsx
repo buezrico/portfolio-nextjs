@@ -67,7 +67,7 @@ export default function Home() {
 
     gsap.to(".about-title", {
       duration: 3,
-      text: "And I'm a Frontend Web Developer",
+      text: "And I'm a Web Developer",
       ease: "none",
       delimiter: "",
       delay: 3,
@@ -112,8 +112,8 @@ export default function Home() {
         {/* ${view ? "" : "d-none" }  */}
 
         <Head>
-          <title>Buez Rico</title>
-          <meta name="description" content="My Portfolio Website" />
+          <title>Chibueze's Portfolio</title>
+          <meta name="description" content="Chibueze Rico's Portfolio" />
           <link rel="icon" href="/images/logo.ico" />
 
           <link
