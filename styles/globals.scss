@@ -26,47 +26,47 @@ p {
   // display: flex;
   // overflow: hidden;
 
-  .mode {
-    height: 100vh;
-    padding: 1rem 0;
-    text-align: center;
-    img {
-      max-width: 15rem;
-    }
-    @media screen and (max-width: 768px) {
-      h2 {
-        font-size: 1.2rem;
-      }
-      img {
-        max-width: 8rem;
-      }
-    }
-    .images {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .mode-img {
-        position: relative;
-        .mode-img {
-          max-width: 20rem;
-          cursor: pointer;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
+  // .mode {
+  //   height: 100vh;
+  //   padding: 1rem 0;
+  //   text-align: center;
+  //   img {
+  //     max-width: 15rem;
+  //   }
+  //   @media screen and (max-width: 768px) {
+  //     h2 {
+  //       font-size: 1.2rem;
+  //     }
+  //     img {
+  //       max-width: 8rem;
+  //     }
+  //   }
+  //   .images {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     .mode-img {
+  //       position: relative;
+  //       .mode-img {
+  //         max-width: 20rem;
+  //         cursor: pointer;
+  //       }
+  //     }
+  //     @media screen and (max-width: 768px) {
+  //       flex-direction: column;
 
-        .mode-img {
-          .mode-img {
-            max-width: 15rem;
-            cursor: pointer;
-          }
-          h5 {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
+  //       .mode-img {
+  //         .mode-img {
+  //           max-width: 15rem;
+  //           cursor: pointer;
+  //         }
+  //         h5 {
+  //           font-size: 1rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .dark-mode {
@@ -139,6 +139,7 @@ p {
     .hire-btn {
       .btn {
         border-color: $primary2 !important;
+        box-shadow: 0 0 0.8rem $primary2 !important;
         color: $primary2 !important;
       }
     }
@@ -162,6 +163,7 @@ p {
         }
         i {
           border: 2px solid $primary2 !important;
+          box-shadow: 0 0 0.8rem $primary2 !important;
         }
       }
     }
@@ -413,7 +415,7 @@ header {
     .styled-title {
       font-family: "Poppins", sans-serif;
       color: $primary;
-      font-weight: normal;
+      font-weight: bold;
     }
     .text {
       width: 60%;
@@ -831,9 +833,14 @@ header {
           box-shadow: none;
 
           &::placeholder {
-            color: $light;
+            color: $primary;
           }
         }
+
+        .dark::placeholder {
+          color: $primary2;
+        }
+
         .send-btn {
           display: flex;
           justify-content: flex-end;

@@ -10,11 +10,12 @@ gsap.registerPlugin(TextPlugin);
 
 export default function Home() {
   const [dark, setDark] = useState(false);
-  const [view, setView] = useState(false);
+  // const [view, setView] = useState(false);
   const { Link } = Anchor;
 
   const darkMode = () => {
-    setView(!view), setDark(!dark);
+    // setView(!view),
+    setDark(!dark);
   };
   useEffect(() => {
     const tl = new TimelineLite();
@@ -80,7 +81,7 @@ export default function Home() {
   }, []);
   return (
     <div className="overall">
-      <div className={`${view ? "d-none" : ""} mode container`}>
+      {/* <div className={`${view ? "d-none" : ""} mode container`}>
         <img src="/images/pp.png" alt="" />
         <h2 className="mode-title"></h2>
         <div className="images">
@@ -103,12 +104,13 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       <div
-        className={`${dark ? "dark-mode" : ""} ${
-          view ? "" : "d-none"
-        } portfolio`}
+        className={`${dark ? "dark-mode" : ""} 
+        portfolio`}
       >
+        {/* ${view ? "" : "d-none" }  */}
+
         <Head>
           <title>Buez Rico</title>
           <meta name="description" content="My Portfolio Website" />
@@ -321,28 +323,28 @@ export default function Home() {
                   <div className="form-group mb-2">
                     <input
                       type="text"
-                      className="form-control"
+                      className={`form-control ${dark ? "dark" : ""}`}
                       placeholder="Name"
                     />
                   </div>
                   <div className="form-group mb-3">
                     <input
                       type="email"
-                      className="form-control"
+                      className={`form-control ${dark ? "dark" : ""}`}
                       placeholder="example@example.com"
                     />
                   </div>
                   <div className="form-group mb-3">
                     <input
                       type="text"
-                      className="form-control"
+                      className={`form-control ${dark ? "dark" : ""}`}
                       placeholder="+123 456 789 1023"
                     />
                   </div>
                   <div className="form-group mb-3">
                     <textarea
                       rows={Number(5)}
-                      className="form-control"
+                      className={`form-control ${dark ? "dark" : ""}`}
                       placeholder="type your message here"
                     ></textarea>
                   </div>
