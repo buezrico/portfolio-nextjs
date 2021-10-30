@@ -193,7 +193,7 @@ export default function Home() {
             </div>
             <div className="picture">
               <img
-                src={`/images/new.jpeg`}
+                src={`/images/new.webp`}
                 className="img-fluid profile-pic"
                 alt=""
               />
