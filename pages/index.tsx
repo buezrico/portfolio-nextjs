@@ -67,7 +67,7 @@ export default function Home() {
 
     gsap.to(".about-title", {
       duration: 3,
-      text: "And I'm a Web Developer",
+      text: "And I might be the developer you're looking for &#128521;",
       ease: "none",
       delimiter: "",
       delay: 3,
@@ -127,26 +127,29 @@ export default function Home() {
         </Head>
 
         <div className="top-info " id="home">
-          <div className="phone contact-info">
+          {/* <div className="phone contact-info">
             <i className="bx bx-phone-call bx-tada-hover"></i>
             <p>08109169579</p>
           </div>
           <div className="email contact-info ">
             <i className="bx bx-mail-send bx-tada-hover"></i>
             <p>ricobuez@gmail.com</p>
-          </div>
+          </div> */}
           <div className="social">
             <a href="https://github.com/buezrico">
-              <i className="bx bxl-github bx-tada-hover"></i>
-            </a>
-            <a href="https://www.instagram.com/buez_rico">
-              <i className="bx bxl-instagram bx-tada-hover"></i>
-            </a>
-            <a href="https://twitter.com/buez_rico">
-              <i className="bx bxl-twitter bx-tada-hover"></i>
+              <i className="bx bxl-github bx-tada-hover bg-dark"></i>
             </a>
             <a href="https://wa.link/londw4">
               <i className="bx bxl-whatsapp bx-tada-hover"></i>
+            </a>
+            <a href="https://wa.link/londw4">
+              <i className="bx bxl-linkedin bx-tada-hover bg-secondary"></i>
+            </a>
+            <a href="https://twitter.com/buez_rico">
+              <i className="bx bxl-twitter bx-tada-hover bg-success"></i>
+            </a>
+            <a href="https://www.instagram.com/buez_rico">
+              <i className="bx bxl-instagram bx-tada-hover bg-primary"></i>
             </a>
           </div>
         </div>
@@ -157,10 +160,10 @@ export default function Home() {
               className={`bx toggler ${dark ? "bxs-sun" : "bxs-moon"}`}
               onClick={() => setDark(!dark)}
             ></i>
-            <div className="text">
+            <div className="text ">
               <h2 className="mb-2 bx-tada text-center">👋</h2>
               <h1 className="mb-2 name-title">
-                I am <span className="styled-title">Chibueze</span>.
+                I'm <span className="styled-title">Buez</span>.
               </h1>
               <h4 className="mb-3 about-title"></h4>
               <div className="btn-contact">
@@ -184,7 +187,7 @@ export default function Home() {
             </div>
             <div className="picture">
               <img
-                src={`/images/header-pic${dark ? "2" : "3"}.png`}
+                src={`/images/new.jpeg`}
                 className="img-fluid profile-pic"
                 alt=""
               />
@@ -204,8 +207,8 @@ export default function Home() {
                       <div className="desc-slide"></div>
                       <h4>About Me</h4>
                       <p>
-                        I'm a Web Developer, I make cool and awesome websites. I
-                        enjoy building Frontend applications mostly.
+                        Hey!, My name is Chibueze, and I'm a web developer with
+                        a passion for front end development.
                       </p>
                       <div className="hire-btn">
                         <button className="btn rounded-0 px-4">
