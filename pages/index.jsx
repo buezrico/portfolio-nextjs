@@ -271,6 +271,15 @@ export default function Home() {
             <h1 className="mb-5 mt-5">My Recent Works</h1>
             <div className="works-section">
               <div className="work">
+                <img src="/images/simdi.png" alt="" />
+                <div className="caption">
+                  <p className="title">Simdi's Portfolio</p>
+                  <a href="https://simdi.netlify.app" className="link">
+                    click to view live
+                  </a>
+                </div>
+              </div>
+              <div className="work">
                 <img src="/images/portfolio.PNG" alt="" />
                 <div className="caption">
                   <p className="title">My Portfolio using HTML and CSS</p>
@@ -372,7 +381,9 @@ export default function Home() {
         <footer>
           <div className="container inner">
             <div className="footer-info">
-              <img src="/images/pp.png" alt="" />
+              <div className="footer-img">
+                <img src="/images/pp.png" alt="" />
+              </div>
 
               <div className="footer-contact">
                 <div className="phone contact-info">

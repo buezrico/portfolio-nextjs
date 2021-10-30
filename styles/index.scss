@@ -546,7 +546,7 @@ header {
       }
     }
     .picture {
-      margin-bottom: 1em;
+      margin: 1em 0;
       max-width: 20em;
       max-height: 20em;
       @media screen and (max-width: 768px) {
@@ -935,10 +935,15 @@ footer {
       justify-content: center;
       padding-top: 1rem;
 
-      img {
+      .footer-img {
         max-width: 10rem;
+        max-height: 10rem;
+        img {
+          width: 100%;
+        }
         @media screen and (max-width: 768px) {
           max-width: 5rem;
+          max-height: 5rem;
         }
       }
       .footer-contact {
