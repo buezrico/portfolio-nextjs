@@ -7,7 +7,7 @@ import TechSlideComp from "../components/TechSlideComp";
 import { Anchor } from "antd";
 import dynamic from "next/dynamic";
 
-const CrispWithNoSSR = dynamic(() => import("../components/crisp"), {
+const CrispWithNoSSR = dynamic(() => import("../components/Crisp"), {
   ssr: false,
 });
 
