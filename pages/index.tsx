@@ -5,6 +5,11 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
 import { Anchor } from "antd";
+import dynamic from "next/dynamic";
+
+const CrispWithNoSSR = dynamic(() => import("../components/crisp"), {
+  ssr: false,
+});
 
 gsap.registerPlugin(TextPlugin);
 
@@ -127,6 +132,7 @@ export default function Home() {
         </Head>
 
         <div className="top-info " id="home">
+          <CrispWithNoSSR />
           {/* <div className="phone contact-info">
             <i className="bx bx-phone-call bx-tada-hover"></i>
             <p>08109169579</p>
