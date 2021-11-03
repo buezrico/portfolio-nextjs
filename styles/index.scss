@@ -69,6 +69,14 @@ p {
 // }
 // }
 
+#particles {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 .dark-mode {
   background: $dark;
 
@@ -237,6 +245,7 @@ p {
   }
 }
 .portfolio {
+  z-index: 2;
   .top-info {
     display: flex;
     justify-content: center;
@@ -855,6 +864,7 @@ header {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
   height: 100%;
   padding: 1rem 0;
+  z-index: 10;
 
   .inner {
     h1 {
