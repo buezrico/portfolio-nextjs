@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
 import { Anchor } from "antd";
 import dynamic from "next/dynamic";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 const CrispWithNoSSR = dynamic(() => import("../components/Crisp"), {
   ssr: false,
@@ -97,7 +97,7 @@ export default function Home() {
   }, []);
   return (
     <div className="overall">
-      <Particles
+      {/* <Particles
         id="particles"
         params={{
           particles: {
@@ -215,7 +215,7 @@ export default function Home() {
             background_size: "cover",
           },
         }}
-      />
+      /> */}
 
       {/* <div className={`${view ? "d-none" : ""} mode container`}>
         <img src="/images/pp.png" alt="" />
@@ -262,6 +262,12 @@ export default function Home() {
           />
 
           <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+
+          <script
+            src="https://cdn.jsdelivr.net/npm/tsparticles@1.9.2/dist/tsparticles.min.js"
+            integrity="sha256-5kED68Spy7K2CEbfu4CjV92DmZR5ZQFUoIR5qmPzZWg="
+            crossorigin="anonymous"
+          ></script>
         </Head>
 
         <div className="top-info " id="home">
