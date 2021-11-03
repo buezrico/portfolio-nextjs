@@ -260,6 +260,8 @@ export default function Home() {
             rel="stylesheet"
             href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
           />
+
+          <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
         </Head>
 
         <div className="top-info " id="home">
