@@ -714,19 +714,19 @@ header {
 
         .work {
           max-width: 100%;
-          img {
-            // max-widt
-          }
+          // img {
+          //   // max-widt
+          // }
         }
       }
       @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
 
-        .work {
-          img {
-            // max-width: 18rem;
-          }
-        }
+        // .work {
+        //   img {
+        //     // max-width: 18rem;
+        //   }
+        // }
       }
     }
   }
