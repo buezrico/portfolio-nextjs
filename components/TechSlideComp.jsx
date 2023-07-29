@@ -58,12 +58,21 @@ export default class AutoPlay extends Component {
             <p>BOOTSTRAP</p>
           </div>
           <div>
+            <i className="bx bxl-tailwind-css"></i>
+            <p>TAILWIND CSS</p>
+          </div>
+          <div>
             <i className="bx bxl-sass"></i>
             <p>SASS</p>
           </div>
           <div>
             <i className="bx bxl-javascript"></i>
             <p>JAVASCRIPT</p>
+          </div>
+
+          <div>
+            <i className="bx bxl-typescript"></i>
+            <p>TYPESCRIPT</p>
           </div>
           <div>
             <i className="bx bxl-react"></i>

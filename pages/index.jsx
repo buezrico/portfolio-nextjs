@@ -154,8 +154,11 @@ export default function Home() {
               className={`bx toggler ${dark ? "bxs-sun" : "bxs-moon"}`}
               onClick={() => setDark(!dark)}
             ></i>
-            <div className="text ">
-              <h2 className="mb-2 bx-tada text-center">👋</h2>
+            <div className="text">
+              <h2 className="hi">
+                Hi
+                <p className="mb-2 bx-tada text-center">👋</p>
+              </h2>
               <h1 className="mb-2 name-title">
                 I'm <span className="styled-title">Buez</span>.
               </h1>
@@ -180,11 +183,7 @@ export default function Home() {
               </div>
             </div>
             <div className="picture">
-              <img
-                src={`/images/new.webp`}
-                className="img-fluid profile-pic"
-                alt=""
-              />
+              <img src={`/images/new.webp`} className="img-fluid" alt="" />
             </div>
           </div>
         </header>
@@ -201,8 +200,14 @@ export default function Home() {
                       <div className="desc-slide"></div>
                       <h4>About Me</h4>
                       <p>
-                        Hey!, My name is Chibueze, and I'm a web developer with
-                        a passion for front end development.
+                        Web Developer | Frontend Enthusiast | Creative Coder.{" "}
+                        <br /> Welcome to my portfolio website, where I bring
+                        ideas to life through captivating web experiences. I'm a
+                        passionate web developer with a love for clean code and
+                        intuitive user interfaces. With a background in
+                        Front-End Development, I am on a mission to craft
+                        exceptional digital solutions that leave a lasting
+                        impression.
                       </p>
                       <div className="hire-btn">
                         <button className="btn rounded-0 px-4">
@@ -236,8 +241,10 @@ export default function Home() {
                       <i className="bx bx-code-alt"></i>
                       <h4>Frontend Web Development</h4>
                       <p>
-                        Bring your Ideas to reality. I make cool and awesome
-                        websites.
+                        Crafting captivating user interfaces with interactive
+                        experiences. Expert in responsive design, intuitive UX,
+                        and performance optimization. Let's elevate your online
+                        presence together! 🌐💡
                       </p>
                     </div>
                   </div>
@@ -259,57 +266,69 @@ export default function Home() {
             <h1 className="mb-5 mt-5">My Recent Works</h1>
             <div className="works-section">
               <div className="work">
-                <img src="/images/simdi.png" alt="" />
+                <img src="/images/codeafrica.png" alt="" />
                 <div className="caption">
-                  <p className="title">Simdi's Portfolio</p>
-                  <a href="https://simdi.netlify.app" className="link">
+                  <p className="title">Code Africa </p>
+                  <a
+                    target="_blank"
+                    href="https://codeafricang.com"
+                    className="link"
+                  >
+                    click to view live
+                  </a>
+                </div>
+              </div>
+
+              <div className="work">
+                <img src="/images/tourafrica.png" alt="" />
+                <div className="caption">
+                  <p className="title">Tour Africa </p>
+                  <a
+                    target="_blank"
+                    href="https://tourafricang.com"
+                    className="link"
+                  >
                     click to view live
                   </a>
                 </div>
               </div>
               <div className="work">
-                <img src="/images/portfolio.PNG" alt="" />
+                <img src="/images/valucares.png" alt="" />
                 <div className="caption">
-                  <p className="title">My Portfolio using HTML and CSS</p>
-                  <a href="https://ricobuez.netlify.app" className="link">
+                  <p className="title">Valucares </p>
+                  <a
+                    target="_blank"
+                    href="https://valucares.com"
+                    className="link"
+                  >
                     click to view live
                   </a>
                 </div>
               </div>
               <div className="work">
-                <img src="/images/ticketty.png" alt="" />
+                <img src="/images/afc.png" alt="" />
                 <div className="caption">
-                  <p className="title">Ticketty Web App</p>
-                  {/* <a href="https://www.ricobuez.netlify.app" className="link">
-                  click to view live
-                </a> */}
-                </div>
-              </div>
-              <div className="work">
-                <img src="/images/techcreek.PNG" alt="" />
-                <div className="caption">
-                  <p className="title">Techcreek E-Gaminator </p>
-                  {/* <a href="https://www.ricobuez.netlify.app" className="link">
-                  click to view live
-                </a> */}
-                </div>
-              </div>
-              <div className="work">
-                <img src="/images/mindspire.png" alt="" />
-                <div className="caption">
-                  <p className="title">Mindspire</p>
-                  <a href="https://mindspire.netlify.app" className="link">
+                  <p className="title">Awelga Female Connect </p>
+                  <a
+                    target="_blank"
+                    href="https://awelgafemaleconnect.netlify.app"
+                    className="link"
+                  >
                     click to view live
                   </a>
                 </div>
               </div>
               <div className="work">
-                <img src="/images/iamjane.png" alt="" />
+                <img src="/images/dominionharvest.png" alt="" />
                 <div className="caption">
-                  <p className="title">I am Jane Model Portfolio</p>
-                  {/* <a href="https://www.ricobuez.netlify.app" className="link">
-                  click to view live
-                </a> */}
+                  <p className="title">Dominion Harvest </p>
+                  <a
+                    target="_blank"
+                    href="https://dominionharvest.org"
+                    className="link"
+                  >
+                    click to view live
+                  </a>
                 </div>
               </div>
             </div>
@@ -321,8 +340,13 @@ export default function Home() {
             <h1 className="mb-3 mt-5">Get In Touch</h1>
             <div className="contact-section">
               <div className="question">
-                <h2>Do you have a project in mind</h2>
-                <i className="bx bx-question-mark"></i>
+                <p>
+                  I'm excited to collaborate on meaningful projects and
+                  contribute to innovative solutions. Whether you're an
+                  employer, fellow developer, or just someone passionate about
+                  the web, let's connect and explore the possibilities together!
+                </p>
+                {/* <i className="bx bx-question-mark"></i> */}
               </div>
               <form>
                 <div className="form">
