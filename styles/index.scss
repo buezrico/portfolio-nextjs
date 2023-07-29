@@ -22,228 +22,6 @@ p {
   margin: 0;
 }
 
-// .overall {
-// display: flex;
-// overflow: hidden;
-
-// .mode {
-//   height: 100vh;
-//   padding: 1rem 0;
-//   text-align: center;
-//   img {
-//     max-width: 15rem;
-//   }
-//   @media screen and (max-width: 768px) {
-//     h2 {
-//       font-size: 1.2rem;
-//     }
-//     img {
-//       max-width: 8rem;
-//     }
-//   }
-//   .images {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     .mode-img {
-//       position: relative;
-//       .mode-img {
-//         max-width: 20rem;
-//         cursor: pointer;
-//       }
-//     }
-//     @media screen and (max-width: 768px) {
-//       flex-direction: column;
-
-//       .mode-img {
-//         .mode-img {
-//           max-width: 15rem;
-//           cursor: pointer;
-//         }
-//         h5 {
-//           font-size: 1rem;
-//         }
-//       }
-//     }
-//   }
-// }
-// }
-
-#particles {
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.dark-mode {
-  background: $dark;
-
-  .top-info {
-    .contact-info {
-      color: $light !important;
-      i {
-        color: $secondary !important;
-      }
-    }
-    .social {
-      i {
-        background: $secondary !important;
-        color: $dark !important;
-      }
-    }
-  }
-  nav {
-    background: rgba(255, 255, 255, 0.3) !important;
-    box-shadow: 0 0 0.8rem $primary2 !important;
-
-    .menu-btn {
-      background-color: $primary2 !important;
-    }
-  }
-
-  header {
-    .picture {
-      img {
-        border: 3px solid $primary2 !important;
-        box-shadow: 0 0 5px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
-          0 0 0 $primary2 !important;
-      }
-    }
-
-    .about-title,
-    .name-title {
-      color: $light !important;
-
-      span {
-        color: $primary2 !important;
-      }
-    }
-    .toggler {
-      box-shadow: 0 10px 10px $primary2;
-    }
-    .styled-title {
-      color: $secondary !important;
-    }
-    .text {
-      color: $light !important;
-    }
-    .btn-contact {
-      .btn {
-        background: $primary2 !important;
-        box-shadow: 0 0 0.8rem $primary2 !important;
-        &:hover {
-          background: $light !important;
-          color: $primary2 !important;
-          border: 2px solid $primary2 !important;
-        }
-      }
-    }
-    .arrow-down {
-      color: $light !important;
-    }
-  }
-
-  .about {
-    color: $primary2 !important;
-
-    .about-content-desc {
-      box-shadow: 0 0 0.8rem $primary2 !important;
-      z-index: 1;
-
-      .desc-slide {
-        background: $primary2-light !important;
-      }
-    }
-    .about-content-contact {
-      box-shadow: 0 0 0.8rem $primary2 !important;
-      z-index: 1;
-
-      .contact-slide {
-        background: $primary2-light !important;
-      }
-    }
-    .hire-btn {
-      .btn {
-        border-color: $primary2 !important;
-        box-shadow: 0 0 0.8rem $primary2 !important;
-        color: $primary2 !important;
-      }
-    }
-    h1 {
-      color: $light !important;
-      border-left-color: $primary2 !important;
-    }
-    .techs-slide {
-      box-shadow: 0 0 0.8rem $primary2 !important;
-      .slider {
-        &:hover {
-          background: $primary2-light !important;
-        }
-      }
-    }
-    .services {
-      .service {
-        box-shadow: 0 0 0.8rem $primary2 !important;
-        &:hover {
-          background: $primary2-light !important;
-        }
-        i {
-          border: 2px solid $primary2 !important;
-          box-shadow: 0 0 0.8rem $primary2 !important;
-        }
-      }
-    }
-  }
-  .works {
-    h1 {
-      color: $light !important;
-      border-left-color: $primary2 !important;
-    }
-    .work {
-      box-shadow: 0 0 1px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
-        0 0 0 $primary2 !important;
-    }
-    .caption {
-      background: $primary2-light !important;
-      color: $dark !important;
-    }
-  }
-  .contact {
-    h1 {
-      border-right: 2px solid $primary2 !important;
-      color: $primary2 !important;
-    }
-    .question {
-      color: $light !important;
-    }
-
-    .form-control {
-      border-bottom-color: $primary2 !important;
-    }
-    .btn {
-      background: $primary2 !important;
-    }
-  }
-  footer {
-    .footer-contact {
-      .contact-info {
-        i {
-          color: $primary2 !important;
-        }
-        p {
-          color: $light !important;
-        }
-      }
-      .social {
-        i {
-          background: $primary2 !important;
-        }
-      }
-    }
-  }
-}
 .portfolio {
   z-index: 2;
   .top-info {
@@ -252,27 +30,42 @@ p {
     padding: 0.5rem;
 
     @media screen and (max-width: 768px) {
-      // padding: 0.5rem;
       display: block;
       text-align: center;
     }
 
-    .contact-info {
-      justify-content: center;
+    .contact-details {
       display: flex;
-      // margin-bottom: 0.1rem;
+      justify-content: center;
+      text-align: center;
       align-items: center;
-      color: $dark;
-      @media screen and (min-width: 768px) {
-        margin-right: 3rem;
-      }
+      margin-bottom: 1rem;
 
-      i {
-        margin-right: 0.5rem;
-        color: $primary;
-      }
-      p {
-        margin: 0;
+      .contact-info {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: $dark;
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+          margin-right: 3rem;
+        }
+
+        i {
+          margin-right: 0.5rem;
+          color: $primary;
+        }
+        p {
+          margin: 0;
+        }
+
+        &:hover {
+          i,
+          p {
+            color: $secondary;
+          }
+        }
       }
     }
     .social {
@@ -988,6 +781,174 @@ footer {
       margin-top: 1rem;
       font-size: 0.7rem;
       text-align: center;
+    }
+  }
+}
+
+.dark-mode {
+  background: $dark;
+
+  .top-info {
+    .contact-info {
+      color: $light !important;
+      i {
+        color: $secondary !important;
+      }
+    }
+    .social {
+      i {
+        background: $secondary !important;
+        color: $dark !important;
+      }
+    }
+  }
+  nav {
+    background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 0 0.8rem $primary2 !important;
+
+    .menu-btn {
+      background-color: $primary2 !important;
+    }
+  }
+
+  header {
+    .picture {
+      img {
+        border: 3px solid $primary2 !important;
+        box-shadow: 0 0 5px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
+          0 0 0 $primary2 !important;
+      }
+    }
+
+    .about-title,
+    .name-title {
+      color: $light !important;
+
+      span {
+        color: $primary2 !important;
+      }
+    }
+    .toggler {
+      box-shadow: 0 10px 10px $primary2;
+    }
+    .styled-title {
+      color: $secondary !important;
+    }
+    .text {
+      color: $light !important;
+    }
+    .btn-contact {
+      .btn {
+        background: $primary2 !important;
+        box-shadow: 0 0 0.8rem $primary2 !important;
+        &:hover {
+          background: $light !important;
+          color: $primary2 !important;
+          border: 2px solid $primary2 !important;
+        }
+      }
+    }
+    .arrow-down {
+      color: $light !important;
+    }
+  }
+
+  .about {
+    color: $primary2 !important;
+
+    .about-content-desc {
+      box-shadow: 0 0 0.8rem $primary2 !important;
+      z-index: 1;
+
+      .desc-slide {
+        background: $primary2-light !important;
+      }
+    }
+    .about-content-contact {
+      box-shadow: 0 0 0.8rem $primary2 !important;
+      z-index: 1;
+
+      .contact-slide {
+        background: $primary2-light !important;
+      }
+    }
+    .hire-btn {
+      .btn {
+        border-color: $primary2 !important;
+        box-shadow: 0 0 0.8rem $primary2 !important;
+        color: $primary2 !important;
+      }
+    }
+    h1 {
+      color: $light !important;
+      border-left-color: $primary2 !important;
+    }
+    .techs-slide {
+      box-shadow: 0 0 0.8rem $primary2 !important;
+      .slider {
+        &:hover {
+          background: $primary2-light !important;
+        }
+      }
+    }
+    .services {
+      .service {
+        box-shadow: 0 0 0.8rem $primary2 !important;
+        &:hover {
+          background: $primary2-light !important;
+        }
+        i {
+          border: 2px solid $primary2 !important;
+          box-shadow: 0 0 0.8rem $primary2 !important;
+        }
+      }
+    }
+  }
+  .works {
+    h1 {
+      color: $light !important;
+      border-left-color: $primary2 !important;
+    }
+    .work {
+      box-shadow: 0 0 1px $primary2, 0 0 5px $primary2, 0 0 10px $primary2,
+        0 0 0 $primary2 !important;
+    }
+    .caption {
+      background: $primary2-light !important;
+      color: $dark !important;
+    }
+  }
+  .contact {
+    h1 {
+      border-right: 2px solid $primary2 !important;
+      color: $primary2 !important;
+    }
+    .question {
+      color: $light !important;
+    }
+
+    .form-control {
+      border-bottom-color: $primary2 !important;
+    }
+    .btn {
+      background: $primary2 !important;
+    }
+  }
+  footer {
+    .footer-contact {
+      .contact-info {
+        i {
+          color: $primary2 !important;
+        }
+        p {
+          color: $light !important;
+        }
+      }
+      .social {
+        i {
+          background: $primary2 !important;
+        }
+      }
     }
   }
 }

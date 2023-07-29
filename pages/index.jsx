@@ -26,7 +26,6 @@ export default function Home() {
   // };
 
   const [dark, setDark] = useState(false);
-  // const [view, setView] = useState(false);
   const { Link } = Anchor;
 
   const darkMode = () => {
@@ -97,150 +96,6 @@ export default function Home() {
   }, []);
   return (
     <div className="overall">
-      {/* <Particles
-        id="particles"
-        params={{
-          particles: {
-            number: {
-              value: 80,
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-            },
-            color: {
-              value: "#ffffff",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#000000",
-              },
-              polygon: {
-                nb_sides: 5,
-              },
-              image: {
-                src: "img/github.svg",
-                width: 100,
-                height: 100,
-              },
-            },
-            opacity: {
-              value: 0.5,
-              random: false,
-              anim: {
-                enable: false,
-                speed: 1,
-                opacity_min: 0.1,
-                sync: false,
-              },
-            },
-            size: {
-              value: 5,
-              random: true,
-              anim: {
-                enable: false,
-                speed: 40,
-                size_min: 0.1,
-                sync: false,
-              },
-            },
-            line_linked: {
-              enable: true,
-              distance: 150,
-              color: "#ffffff",
-              opacity: 0.4,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 2,
-              direction: "none",
-              random: false,
-              straight: false,
-              out_mode: "out",
-              attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200,
-              },
-            },
-          },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: {
-                enable: true,
-                mode: "grab",
-              },
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 400,
-                line_linked: {
-                  opacity: 1,
-                },
-              },
-              bubble: {
-                distance: 400,
-                size: 40,
-                duration: 2,
-                opacity: 8,
-                speed: 3,
-              },
-              repulse: {
-                distance: 200,
-              },
-              push: {
-                particles_nb: 4,
-              },
-              remove: {
-                particles_nb: 2,
-              },
-            },
-          },
-          retina_detect: true,
-          config_demo: {
-            hide_card: false,
-            background_color: "#b61924",
-            background_image: "",
-            background_position: "50% 50%",
-            background_repeat: "no-repeat",
-            background_size: "cover",
-          },
-        }}
-      /> */}
-
-      {/* <div className={`${view ? "d-none" : ""} mode container`}>
-        <img src="/images/pp.png" alt="" />
-        <h2 className="mode-title"></h2>
-        <div className="images">
-          <div className="mode-img">
-            <h5>Light Mode</h5>
-            <img
-              className="mode-img"
-              src="/images/light-mode.png"
-              alt=""
-              onClick={() => setView(!view)}
-            />
-          </div>
-          <div className="mode-img">
-            <h5>Dark Mode</h5>
-            <img
-              className="mode-img"
-              src="/images/dark-mode.png"
-              alt=""
-              onClick={darkMode}
-            />
-          </div>
-        </div>
-      </div> */}
       <div
         className={`${dark ? "dark-mode" : ""} 
         portfolio`}
@@ -260,26 +115,20 @@ export default function Home() {
             rel="stylesheet"
             href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
           />
-
-          <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
-
-          <script
-            src="https://cdn.jsdelivr.net/npm/tsparticles@1.9.2/dist/tsparticles.min.js"
-            integrity="sha256-5kED68Spy7K2CEbfu4CjV92DmZR5ZQFUoIR5qmPzZWg="
-            crossorigin="anonymous"
-          ></script>
         </Head>
 
         <div className="top-info " id="home">
           <CrispWithNoSSR />
-          {/* <div className="phone contact-info">
-            <i className="bx bx-phone-call bx-tada-hover"></i>
-            <p>08109169579</p>
+          <div className="contact-details">
+            <div className="phone contact-info">
+              <i className="bx bx-phone-call bx-tada-hover"></i>
+              <p>08109169579</p>
+            </div>
+            <div className="email contact-info ">
+              <i className="bx bx-mail-send bx-tada-hover"></i>
+              <p>ricobuez@gmail.com</p>
+            </div>
           </div>
-          <div className="email contact-info ">
-            <i className="bx bx-mail-send bx-tada-hover"></i>
-            <p>ricobuez@gmail.com</p>
-          </div> */}
           <div className="social">
             <a href="https://github.com/buezrico">
               <i className="bx bxl-github bx-tada-hover bg-dark"></i>
