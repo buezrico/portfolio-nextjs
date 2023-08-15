@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { useState } from "react";
-import { Anchor } from "antd";
+import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const { Link } = Anchor;
   return (
     <nav>
       <div className="wrapper">
@@ -27,67 +26,37 @@ const Navbar = () => {
 
           <div className="mobile-nav" style={{ left: nav ? "0%" : "" }}>
             <ul className="nav ">
-              <li className="nav-item home-link">
-                <i className="bx bx-home"></i>
-                <a className="nav-link bx-tada-hover">
-                  <Anchor
-                    onClick={() => setNav(!nav)}
-                    affix={false}
-                    showInkInFixed={false}
-                  >
-                    <Link href="#home" title="Home" />
-                  </Anchor>
-                </a>
-              </li>
-              <li className="nav-item about-link">
-                <i className="bx bx-user"></i>
-                <a className="nav-link bx-tada-hover">
-                  <Anchor
-                    onClick={() => setNav(!nav)}
-                    affix={false}
-                    showInkInFixed={false}
-                  >
-                    <Link href="#about" title="About Me" />
-                  </Anchor>
-                </a>
-              </li>
+              <Link href="#home" onClick={() => setNav(!nav)}>
+                <li className="nav-item home-link">
+                  <i className="bx bx-home"></i>
+                  <a className="nav-link bx-tada-hover">Home</a>
+                </li>
+              </Link>
+              <Link href="#about" onClick={() => setNav(!nav)}>
+                <li className="nav-item about-link">
+                  <i className="bx bx-user"></i>
+                  <a className="nav-link bx-tada-hover">About Me</a>
+                </li>
+              </Link>
 
-              <li className="nav-item services-link">
-                <i className="bx bx-briefcase-alt-2"></i>
-                <a className="nav-link bx-tada-hover">
-                  <Anchor
-                    onClick={() => setNav(!nav)}
-                    affix={false}
-                    showInkInFixed={false}
-                  >
-                    <Link href="#services" title="Services" />
-                  </Anchor>
-                </a>
-              </li>
-              <li className="nav-item works-link">
-                <i className="bx bx-git-branch"></i>
-                <a className="nav-link bx-tada-hover">
-                  <Anchor
-                    onClick={() => setNav(!nav)}
-                    affix={false}
-                    showInkInFixed={false}
-                  >
-                    <Link href="#works" title="Recent Works" />
-                  </Anchor>
-                </a>
-              </li>
-              <li className="nav-item contact-link">
-                <i className="bx bx-mail-send"></i>
-                <a className="nav-link bx-tada-hover">
-                  <Anchor
-                    onClick={() => setNav(!nav)}
-                    affix={false}
-                    showInkInFixed={false}
-                  >
-                    <Link href="#contact" title="Get In Touch" />
-                  </Anchor>
-                </a>
-              </li>
+              <Link href="#services" onClick={() => setNav(!nav)}>
+                <li className="nav-item services-link">
+                  <i className="bx bx-briefcase-alt-2"></i>
+                  <a className="nav-link bx-tada-hover">Services</a>
+                </li>
+              </Link>
+              <Link href="#works" onClick={() => setNav(!nav)}>
+                <li className="nav-item works-link">
+                  <i className="bx bx-git-branch"></i>
+                  <a className="nav-link bx-tada-hover">Recent Works</a>
+                </li>
+              </Link>
+              <Link href="#contact" onClick={() => setNav(!nav)}>
+                <li className="nav-item contact-link">
+                  <i className="bx bx-mail-send"></i>
+                  <a className="nav-link bx-tada-hover">Get In Touch</a>
+                </li>
+              </Link>
               <li className="nav-item close-link">
                 <i
                   className="bx bx-x menu-btn"

@@ -406,15 +406,16 @@ header {
         width: 100%;
         height: 100%;
         border-radius: 2em;
-        border: 3px solid $primary2;
+        border: 1px solid $primary2;
         box-shadow: 0 0 5px $primary, 0 0 5px $primary, 0 0 0 $primary,
           0 0 0 $primary;
         background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
         -webkit-box-reflect: below 1px
           linear-gradient(transparent, rgba(0, 0, 0, 0.2));
-        animation: morph 3s linear infinite;
+        // animation: morph 3s linear infinite;
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
         transition: all 1s ease-in-out;
-        padding: 0.5rem;
+        padding: 0.3rem;
         // padding: 1rem;
 
         // @media screen and (min-width: 992px) {

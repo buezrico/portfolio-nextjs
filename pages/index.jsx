@@ -1,107 +1,27 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import { gsap, TimelineLite } from "gsap";
-import { TextPlugin } from "gsap/dist/TextPlugin";
 import Navbar from "../components/Navbar";
 import TechSlideComp from "../components/TechSlideComp";
-import { Anchor } from "antd";
 import dynamic from "next/dynamic";
-// import Particles from "react-particles-js";
+import Link from "next/link";
 
 const CrispWithNoSSR = dynamic(() => import("../components/Crisp"), {
   ssr: false,
 });
 
-gsap.registerPlugin(TextPlugin);
-
 export default function Home() {
-  // const particlesInit = (main) => {
-  //   console.log(main);
-
-  //   // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  // };
-
-  // const particlesLoaded = (container) => {
-  //   console.log(container);
-  // };
-
   const [dark, setDark] = useState(false);
-  const { Link } = Anchor;
 
   const darkMode = () => {
-    // setView(!view),
     setDark(!dark);
   };
-  useEffect(() => {
-    const tl = new TimelineLite();
 
-    tl.from(
-      ".name-title",
-      {
-        duration: 2,
-        ease: "elastic.out",
-        y: -100,
-        opacity: 0,
-        delay: 1,
-      },
-      ""
-    );
-    tl.from(
-      ".profile-pic",
-      {
-        duration: 2,
-        ease: "elastic.out",
-        y: -100,
-        opacity: 0,
-        delay: 1,
-      },
-      ""
-    );
-    tl.from(
-      ".btn-contact",
-      {
-        duration: 3,
-        ease: "elastic.out",
-        x: -100,
-        opacity: 0,
-        delay: 2,
-      },
-      ""
-    );
-
-    tl.from(
-      ".images",
-      {
-        duration: 3,
-        ease: "elastic.out",
-        y: 150,
-        opacity: 0,
-      },
-      ""
-    );
-
-    gsap.to(".about-title", {
-      duration: 3,
-      text: "And I might be the developer you're looking for &#128521;",
-      ease: "none",
-      delimiter: "",
-      delay: 3,
-    });
-    gsap.to(".mode-title", {
-      duration: 3,
-      text: "Select a Mode to preview.",
-      ease: "none",
-      delimiter: "",
-    });
-  }, []);
   return (
     <div className="overall">
       <div
         className={`${dark ? "dark-mode" : ""} 
         portfolio`}
       >
-        {/* ${view ? "" : "d-none" }  */}
-
         <Head>
           <title>Chibueze's Portfolio</title>
           <meta name="description" content="Chibueze Rico's Portfolio" />
@@ -117,8 +37,8 @@ export default function Home() {
           />
         </Head>
 
-        <div className="top-info " id="home">
-          <CrispWithNoSSR />
+        <CrispWithNoSSR />
+        {/* <div className="top-info " id="home">
           <div className="contact-details">
             <div className="phone contact-info">
               <i className="bx bx-phone-call bx-tada-hover"></i>
@@ -146,7 +66,7 @@ export default function Home() {
               <i className="bx bxl-instagram bx-tada-hover bg-primary"></i>
             </a>
           </div>
-        </div>
+        </div> */}
         <Navbar />
         <header>
           <div className="content container">
@@ -162,25 +82,23 @@ export default function Home() {
               <h1 className="mb-2 name-title">
                 I'm <span className="styled-title">Buez</span>.
               </h1>
-              <h4 className="mb-3 about-title"></h4>
-              <div className="btn-contact">
-                <button className="btn rounded-0 p-2 px-4">
-                  <i className="bx bx-mail-send"></i>
-                  <p>
-                    <Anchor affix={false} showInkInFixed={false}>
-                      <Link href="#contact" title="Get In Touch" />
-                    </Anchor>
-                  </p>
-                </button>
-              </div>
-              <div className="arrow-down bx-fade-down">
-                <i className="bx bxs-chevrons-down"></i>
-                <span>
-                  <Anchor affix={false} showInkInFixed={false}>
-                    <Link href="#about" title="Get To Know Me" />
-                  </Anchor>
-                </span>
-              </div>
+              <h4 className="mb-3 about-title">
+                And I might be the developer you're looking for &#128521;
+              </h4>
+              <Link href="#contact">
+                <div className="btn-contact">
+                  <button className="btn rounded-0 p-2 px-4">
+                    <i className="bx bx-mail-send"></i>
+                    <p>Get In Touch</p>
+                  </button>
+                </div>
+              </Link>
+              <Link href="#about">
+                <div className="arrow-down bx-fade-down">
+                  <i className="bx bxs-chevrons-down"></i>
+                  <span>Get To Know Me"</span>
+                </div>
+              </Link>
             </div>
             <div className="picture">
               <img src={`/images/new.webp`} className="img-fluid" alt="" />
@@ -200,7 +118,7 @@ export default function Home() {
                       <div className="desc-slide"></div>
                       <h4>About Me</h4>
                       <p>
-                        Web Developer | Frontend Enthusiast | Creative Coder.{" "}
+                        Web Developer | Frontend Enthusiast | Creative Coder.
                         <br /> Welcome to my portfolio website, where I bring
                         ideas to life through captivating web experiences. I'm a
                         passionate web developer with a love for clean code and
@@ -209,13 +127,13 @@ export default function Home() {
                         exceptional digital solutions that leave a lasting
                         impression.
                       </p>
-                      <div className="hire-btn">
-                        <button className="btn rounded-0 px-4">
-                          <Anchor affix={false} showInkInFixed={false}>
-                            <Link href="#contact" title="Hire Me" />
-                          </Anchor>
-                        </button>
-                      </div>
+                      <Link href="#contact">
+                        <div className="hire-btn">
+                          <button className="btn rounded-0 px-4">
+                            Hire Me
+                          </button>
+                        </div>
+                      </Link>
                     </div>
                     <div className="about-content-contact">
                       <div className="contact-slide"></div>
@@ -249,12 +167,12 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="techs mt-5 mb-3">
+                  {/* <div className="techs mt-5 mb-3">
                     <h1 className="mb-3">Technologies I'm familiar with</h1>
                     <div className="techs-slide">
                       <TechSlideComp />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
