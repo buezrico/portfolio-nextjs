@@ -167,12 +167,12 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="techs mt-5 mb-3">
+                  {/* <div className="techs mt-5 mb-3">
                     <h1 className="mb-3">Technologies I'm familiar with</h1>
                     <div className="techs-slide">
                       <TechSlideComp />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
