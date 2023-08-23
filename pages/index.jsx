@@ -38,7 +38,7 @@ export default function Home() {
         </Head>
 
         <CrispWithNoSSR />
-        {/* <div className="top-info " id="home">
+        <div className="top-info " id="home">
           <div className="contact-details">
             <div className="phone contact-info">
               <i className="bx bx-phone-call bx-tada-hover"></i>
@@ -66,7 +66,7 @@ export default function Home() {
               <i className="bx bxl-instagram bx-tada-hover bg-primary"></i>
             </a>
           </div>
-        </div> */}
+        </div>
         <Navbar />
         <header>
           <div className="content container">
@@ -167,12 +167,12 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* <div className="techs mt-5 mb-3">
+                  <div className="techs mt-5 mb-3">
                     <h1 className="mb-3">Technologies I'm familiar with</h1>
                     <div className="techs-slide">
                       <TechSlideComp />
                     </div>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -237,12 +237,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="work">
-                <img src="/images/dominionharvest.png" alt="" />
+                <img src="/images/assetplus.png" alt="" />
                 <div className="caption">
-                  <p className="title">Dominion Harvest </p>
+                  <p className="title">Asset Plus </p>
                   <a
                     target="_blank"
-                    href="https://dominionharvest.org"
+                    href="https://assetplusng.org"
                     className="link"
                   >
                     click to view live
@@ -341,7 +341,7 @@ export default function Home() {
               </div>
             </div>
 
-            <p className="copyright">Copyright @ 2021 Okoronkwo Chibueze</p>
+            <p className="copyright">Copyright @ 2023 Okoronkwo Chibueze</p>
           </div>
         </footer>
       </div>
