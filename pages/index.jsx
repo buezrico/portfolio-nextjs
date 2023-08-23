@@ -1,9 +1,8 @@
-import Head from "next/head";
-import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import TechSlideComp from "../components/TechSlideComp";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import Link from "next/link";
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 
 const CrispWithNoSSR = dynamic(() => import("../components/Crisp"), {
   ssr: false,
