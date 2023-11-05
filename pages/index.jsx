@@ -183,6 +183,19 @@ export default function Home() {
             <h1 className="mb-5 mt-5">My Recent Works</h1>
             <div className="works-section">
               <div className="work">
+                <img src="/images/getlinked.png" alt="" />
+                <div className="caption">
+                  <p className="title">Get Linked </p>
+                  <a
+                    target="_blank"
+                    href="https://getlinked-rico.vercel.app/"
+                    className="link"
+                  >
+                    click to view live
+                  </a>
+                </div>
+              </div>
+              <div className="work">
                 <img src="/images/codeafrica.png" alt="" />
                 <div className="caption">
                   <p className="title">Code Africa </p>
@@ -241,7 +254,7 @@ export default function Home() {
                   <p className="title">Asset Plus </p>
                   <a
                     target="_blank"
-                    href="https://assetplusng.org"
+                    href="https://assetplusng.com"
                     className="link"
                   >
                     click to view live
